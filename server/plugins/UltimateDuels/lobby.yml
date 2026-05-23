@@ -1,0 +1,153 @@
+# ================================
+# UltimateDuels - Lobby Configuration
+# ================================
+
+lobby:
+  # Enable the custom lobby system
+  enabled: true
+  
+  # Lobby world name
+  world: world
+  
+  # Lobby spawn point (set in-game with /duels setlobby)
+  spawn: world;145.621;109.000;-377.603;179.53;1.55
+  
+  # Protection settings
+  protection:
+    # Allow PvP in lobby
+    pvp: false
+    # Allow hunger depletion
+    hunger: false
+    # Allow fall damage
+    fall-damage: false
+    # Allow block breaking
+    block-break: false
+    # Allow block placing
+    block-place: false
+    # Allow item dropping
+    item-drop: false
+    # Allow item pickup
+    item-pickup: false
+  
+  # Weather settings
+  weather:
+    enabled: false
+  
+  # Time settings (in ticks, 0-24000)
+  # 0 = sunrise, 6000 = noon, 12000 = sunset, 18000 = midnight
+  time: 6000
+  
+  # Effects applied to players in lobby
+  # Format: effect_name:amplifier:duration (duration in ticks, -1 for infinite)
+  effects:
+  - speed:0:-1
+  - night_vision:0:-1
+
+# Hotbar item configuration
+hotbar:
+  items:
+    queue:
+      slot: 0
+      material: DIAMOND_SWORD
+      name: '&b&lQueue Menu'
+      lore:
+      - ''
+      - '&7Click to open the queue menu'
+      - '&7and find an opponent!'
+      - ''
+      - '&eClick to open!'
+      enchanted: true
+    
+    party:
+      slot: 1
+      material: SPYGLASS
+      name: '&d&lParty Menu'
+      lore:
+      - ''
+      - '&7Create or manage your party'
+      - '&7Invite friends and duel together!'
+      - ''
+      - '&eClick to open!'
+    
+    kit_editor:
+      slot: 2
+      material: BOOK
+      name: '&a&lKit Editor'
+      lore:
+      - ''
+      - '&7Customize your kits'
+      - '&7Arrange items to your preference!'
+      - ''
+      - '&eClick to open!'
+    
+    ffa:
+      slot: 3
+      material: TOTEM_OF_UNDYING
+      name: '&c&lFFA Arenas'
+      lore:
+      - ''
+      - '&7Join a Free For All arena'
+      - '&7Fight against everyone!'
+      - ''
+      - '&eClick to open!'
+    
+    settings:
+      slot: 4
+      material: COMPARATOR
+      name: '&e&lSettings'
+      lore:
+      - ''
+      - '&7Customize your experience'
+      - '&7Toggle various options!'
+      - ''
+      - '&eClick to open!'
+    
+    spectate:
+      slot: 5
+      material: ENDER_EYE
+      name: '&9&lSpectate'
+      lore:
+      - ''
+      - '&7Watch ongoing duels'
+      - '&7Learn from other players!'
+      - ''
+      - '&eClick to open!'
+    
+    stats:
+      slot: 6
+      material: PLAYER_HEAD
+      name: '&6&lYour Stats'
+      lore:
+      - ''
+      - '&7View your statistics'
+      - '&7Kills, Deaths, K/D and more!'
+      - ''
+      - '&eClick to view!'
+    
+    shop:
+      slot: 7
+      material: EMERALD
+      name: '&a&lShop'
+      lore:
+      - ''
+      - '&7Purchase cosmetics'
+      - '&7and special items!'
+      - ''
+      - '&eClick to open!'
+      enabled: true
+    
+    leave:
+      slot: 8
+      material: RED_BED
+      name: '&c&lReturn to Hub'
+      lore:
+      - ''
+      - '&7Leave the duels lobby'
+      - '&7and return to the hub!'
+      - ''
+      - '&eClick to leave!'
+
+# Messages
+messages:
+  welcome: '&a&lWelcome to &b&lUltimateDuels&a&l!'
+  leave: '&7You have left the duels lobby.'

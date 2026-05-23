@@ -1,0 +1,826 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+#                        ULTIMATE DUELS - LANGUE FRANÇAISE
+#                                  Version 1.0.1
+# ═══════════════════════════════════════════════════════════════════════════════
+#
+#  Tous les messages supportent:
+#  - Codes couleur (&a, &b, etc.)
+#  - Couleurs Hex (&#FF5555)
+#  - Format MiniMessage (<red>, <gradient:red:blue>, etc.)
+#  - Placeholders PlaceholderAPI
+#  - Placeholders du plugin {player}, {target}, etc.
+#
+# ═══════════════════════════════════════════════════════════════════════════════
+
+language:
+  code: "fr"
+  name: "Français"
+  flag: "🇫🇷"
+  version: "1.0.1"
+
+# ██████╗ ███████╗███╗   ██╗███████╗██████╗  █████╗ ██╗
+# ██╔════╝ ██╔════╝████╗  ██║██╔════╝██╔══██╗██╔══██╗██║
+# ██║  ███╗█████╗  ██╔██╗ ██║█████╗  ██████╔╝███████║██║
+# ██║   ██║██╔══╝  ██║╚██╗██║██╔══╝  ██╔══██╗██╔══██║██║
+# ╚██████╔╝███████╗██║ ╚████║███████╗██║  ██║██║  ██║███████╗
+#  ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+
+general:
+  prefix: "&8[&6UltimateDuels&8] "
+  # Messages de connexion/déconnexion (diffusés à tous les joueurs)
+  join-broadcast: "&e{player} &7a rejoint le jeu !"
+  quit-broadcast: "&e{player} &7a quitté le jeu."
+
+  # Messages de bienvenue (affichés au joueur qui se connecte)
+  welcome-back: "&7Bon retour, &e{player}&7 !"
+  welcome-stats: "&7Tes Stats : &a{wins} Victoires &7| &c{losses} Défaites &7| &6{elo} Elo"
+  welcome-new: "&7Bienvenue, &e{player}&7 !"
+  welcome-hint: "&7Utilise les objets dans ta barre d'action pour commencer."
+
+  no-permission: "{prefix}&cTu n'as pas la permission de faire ça !"
+  player-only: "{prefix}&cCette commande ne peut être utilisée que par des joueurs !"
+  console-only: "{prefix}&cCette commande ne peut être utilisée que depuis la console !"
+  player-not-found: "{prefix}&cLe joueur &e{player} &cn'a pas été trouvé !"
+  player-offline: "{prefix}&cLe joueur &e{player} &cn'est pas en ligne !"
+  player-not-in-lobby: "{prefix}&cTu dois être dans le lobby pour faire ça !"
+  player-busy: "{prefix}&c{player} est actuellement occupé !"
+  invalid-number: "{prefix}&c'{input}' n'est pas un nombre valide !"
+  invalid-argument: "{prefix}&cArgument invalide ! Utilisation : &e{usage}"
+  reload-start: "{prefix}&7Rechargement de la configuration..."
+  reload-complete: "{prefix}&aConfiguration rechargée avec succès !"
+  reload-failed: "{prefix}&cÉchec du rechargement de la configuration ! Vérifiez la console."
+  plugin-disabled: "{prefix}&cCette fonctionnalité est actuellement désactivée !"
+  cooldown: "{prefix}&cVeuillez attendre &e{time} &cavant de refaire ça !"
+  database-error: "{prefix}&cUne erreur de base de données s'est produite. Veuillez réessayer plus tard."
+  join-message: "{prefix}&aBienvenue sur &6Ultimate Duels&a ! Tape &e/duel &apour commencer."
+  quit-message: "&e{player} &7a quitté le serveur."
+  staff-notification: "&8[&6Staff&8] &7{message}"
+  player-in-duel: "{prefix}&cTu ne peux pas utiliser cette commande pendant un duel !"
+  player-in-ffa: "{prefix}&cTu ne peux pas utiliser cette commande pendant une arène FFA !"
+  player-spectating: "{prefix}&cTu ne peux pas utiliser cette commande en mode spectateur !"
+  language-menu-title: "&6&l▬▬▬▬▬▬ MENU LANGUE ▬▬▬▬▬▬"
+  language-menu-current: "&7Langue actuelle : &a{language}"
+  language-menu-available: "&eLangues disponibles :"
+  language-menu-click: "&eClique pour sélectionner"
+  language-changed: "{prefix}&aLangue changée en &e{language}&a !"
+  language-already-selected: "{prefix}&cTu utilises déjà &e{language}&c !"
+  language-not-available: "{prefix}&cLa langue &e{language} &cn'est pas disponible !"
+  language-reload-success: "{prefix}&aLangues rechargées avec succès !"
+
+# ██████╗ ██╗   ██╗███████╗██╗
+# ██╔══██╗██║   ██║██╔════╝██║
+# ██║  ██║██║   ██║█████╗  ██║
+# ██║  ██║██║   ██║██╔══╝  ██║
+# ██████╔╝╚██████╔╝███████╗███████╗
+# ╚═════╝  ╚═════╝ ╚══════╝╚══════╝
+
+duel:
+  # ════════════════════════════════════════════════════════════════════════════
+  # MESSAGES D'ERREUR
+  # ════════════════════════════════════════════════════════════════════════════
+  cannot-duel-self: "{prefix}&cTu ne peux pas te défier toi-même !"
+  already-in-match: "{prefix}&cTu es déjà dans un match !"
+  target-in-match: "{prefix}&c{player} est déjà dans un match !"
+  sender-in-queue: "{prefix}&cTu es dans une file d'attente ! Quitte d'abord avec /leavequeue"
+  target-in-queue: "{prefix}&c{player} est dans une file d'attente !"
+  kit-not-found: "{prefix}&cLe kit &e{kit} &cn'existe pas !"
+  arena-not-found: "{prefix}&cL'arène &e{arena} &cn'existe pas !"
+  no-available-arenas: "{prefix}&cAucune arène n'est actuellement disponible !"
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # MESSAGES DE DEMANDE DE DUEL
+  # ════════════════════════════════════════════════════════════════════════════
+  request:
+    # Messages affichés à l'expéditeur quand la demande est envoyée
+    sent-header: "&a&lDEMANDE DE DUEL ENVOYÉE !"
+    sent-target: "&7Cible : &e{target}"
+    sent-kit: "&7Kit : &e{kit}"
+    sent-arena: "&7Arène : &e{arena}"
+    sent-rounds: "&7Manches : &e{rounds}"
+    sent-waiting: "&7En attente de réponse..."
+    sent-success: "&aDemande de duel envoyée à &e{target}&a !"
+
+    # Messages affichés au destinataire quand il reçoit une demande
+    received-header: "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    received-title: "&e&lDEMANDE DE DUEL !"
+    received-from: "&7De : &a{sender}"
+    received-kit: "&7Kit : &e{kit}"
+    received-arena: "&7Arène : &e{arena}"
+    received-rounds: "&7Manches : &e{rounds}"
+    received-accept: "&a/accept &7- Accepter le duel"
+    received-deny: "&c/deny &7- Refuser le duel"
+    received-footer: "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+    # Messages au survol pour texte cliquable
+    received-hover-accept: "&aClique pour accepter le duel !"
+    received-hover-deny: "&cClique pour refuser le duel !"
+
+    # Expiration de la demande
+    expired-sender: "{prefix}&cTa demande de duel à &e{target} &ca expiré."
+    expired-receiver: "{prefix}&cLa demande de duel de &e{player} &ca expiré."
+
+    # Annulation de la demande
+    cancelled: "{prefix}&cTu as annulé ta demande de duel à &e{target}&c."
+    cancelled-receiver: "{prefix}&c{player} &ca annulé sa demande de duel."
+
+    # Demandes en double
+    already-sent: "{prefix}&cTu as déjà une demande de duel en attente pour &e{target}&c !"
+    already-pending: "{prefix}&cTu as déjà une demande de duel en attente !"
+
+    # Erreurs de validation de demande
+    self-duel: "{prefix}&cTu ne peux pas te défier toi-même !"
+    disabled-target: "{prefix}&c{target} a désactivé les demandes de duel !"
+    in-duel: "{prefix}&cTu es déjà dans un duel !"
+    target-in-duel: "{prefix}&c{target} est déjà dans un duel !"
+    in-queue: "{prefix}&cTu es actuellement dans une file d'attente ! Quitte d'abord."
+    target-in-queue: "{prefix}&c{target} est actuellement dans une file d'attente !"
+    no-pending: "{prefix}&cTu n'as pas de demande de duel en attente de &e{player}&c !"
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # MESSAGES D'ACCEPTATION
+  # ════════════════════════════════════════════════════════════════════════════
+  accept:
+    no-request: "{prefix}&cTu n'as pas de demande de duel en attente !"
+    expired: "{prefix}&cCette demande de duel a expiré !"
+    sender-offline: "{prefix}&cLe joueur qui a envoyé la demande n'est plus en ligne !"
+    already-in-match: "{prefix}&cL'un des joueurs est déjà dans un match !"
+    no-arenas: "{prefix}&cAucune arène n'est actuellement disponible ! Réessaye plus tard."
+    accepted-you: "&aTu as accepté la demande de duel de &e{sender}&a !"
+    accepted-them: "&a{target} &aa accepté ta demande de duel !"
+    success: "&aDuel accepté !"
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # MESSAGES DE REFUS
+  # ════════════════════════════════════════════════════════════════════════════
+  deny:
+    no-request: "{prefix}&cTu n'as pas de demande de duel en attente !"
+    denied-you: "&cTu as refusé la demande de duel."
+    denied-them: "&c{player} a refusé ta demande de duel."
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # MESSAGES DE COMPTE À REBOURS
+  # ════════════════════════════════════════════════════════════════════════════
+  countdown:
+    title: "&c{seconds}"
+    subtitle: "&7Prépare-toi à combattre !"
+    fight-title: "&a&lCOMBAT !"
+    fight-subtitle: "&7Bonne chance !"
+    starting: "{prefix}&7Le duel commence dans &e{seconds} &7secondes..."
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # MESSAGES DE MANCHE (Duels multi-manches)
+  # ════════════════════════════════════════════════════════════════════════════
+  round:
+    start: "{prefix}&6La Manche &e{round}&6/&e{max_rounds} &6a commencé !"
+    end: "{prefix}&e{winner} &6a gagné la Manche &e{round}&6 !"
+    won: "&a&lMANCHE GAGNÉE ! &7Score : &e{score}"
+    lost: "&c&lMANCHE PERDUE ! &7Score : &e{score}"
+    starting: "&e&lManche {round} en cours de démarrage..."
+    preparing: "&e&lPréparation de la Manche {round}..."
+    fight: "&a&lCOMBAT !"
+    player-died: "&c{player} &7a été tué par &a{killer}&7 !"
+    reset: "{prefix}&7Réinitialisation pour la prochaine manche..."
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # MESSAGES DE RÉGÉNÉRATION D'ARÈNE
+  # ════════════════════════════════════════════════════════════════════════════
+  arena:
+    regenerating: "&e&lPréparation de l'arène pour la prochaine manche..."
+    ready: "&a&lArène prête ! Démarrage de la manche {round}..."
+    regen-failed: "&e&lRégénération de l'arène ignorée - poursuite du match..."
+    restoring: "&7Restauration de l'arène &e{arena}&7..."
+    restored: "&aL'arène &e{arena} &aa été restaurée !"
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # MESSAGES DE FIN DE MATCH
+  # ════════════════════════════════════════════════════════════════════════════
+  match:
+    victory-title: "&a&lVICTOIRE !"
+    victory-subtitle: "&7Tu as gagné le duel !"
+    defeat-title: "&c&lDÉFAITE"
+    defeat-subtitle: "&7Meilleure chance la prochaine fois !"
+    draw-title: "&e&lÉGALITÉ"
+    draw-subtitle: "&7C'est une égalité !"
+
+    # Message de diffusion
+    winner-broadcast: "&6{winner} &ea vaincu &6{loser} &een duel ! &7(&b{kit}&7)"
+
+    # Écran de statistiques de match
+    statistics:
+      - ""
+      - "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - "&e&lRÉSULTATS DU DUEL"
+      - "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - ""
+      - "&7Gagnant : &a{winner}"
+      - "&7Perdant : &c{loser}"
+      - "&7Score Final : &e{score}"
+      - ""
+      - "&7Kit : &b{kit}"
+      - "&7Arène : &d{arena}"
+      - "&7Durée : &f{duration}"
+      - ""
+      - "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - ""
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # MESSAGES D'ABANDON
+  # ════════════════════════════════════════════════════════════════════════════
+  forfeit:
+    self: "{prefix}&cTu as abandonné le duel !"
+    opponent: "{prefix}&e{player} &ca abandonné le duel ! Tu gagnes !"
+    broadcast: "&e{player} &ca abandonné son duel contre &e{opponent}&c !"
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # MESSAGES DE DÉCONNEXION
+  # ════════════════════════════════════════════════════════════════════════════
+  disconnect:
+    self: "{prefix}&cTu as été déconnecté du duel."
+    opponent: "{prefix}&e{player} &cs'est déconnecté ! Tu gagnes !"
+    broadcast: "&e{player} &cs'est déconnecté de son duel !"
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # MESSAGES SPECTATEUR
+  # ════════════════════════════════════════════════════════════════════════════
+  spectator:
+    round-ended: "&7Manche {round}/{total} terminée ! Score : &e{score}"
+    round-starting: "&7Manche {round} en cours de démarrage..."
+    match-over: "&a&lMATCH TERMINÉ ! &7Gagnant : &e{winner}"
+    match-cancelled: "&cLe match a été annulé."
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # MESSAGES DE TÉLÉPORTATION
+  # ════════════════════════════════════════════════════════════════════════════
+  teleport:
+    teleporting: "&7Téléportation vers l'arène..."
+    teleported: "&aTéléporté vers l'arène &e{arena}&a !"
+    failed: "&cÉchec de la téléportation vers l'arène !"
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # MESSAGES DE RÉCUPÉRATION D'ERREUR
+  # ════════════════════════════════════════════════════════════════════════════
+  error:
+    match-cancelled: "{prefix}&cLe match a été annulé : &e{reason}"
+    kit-load-failed: "{prefix}&cÉchec du chargement du kit !"
+    arena-load-failed: "{prefix}&cÉchec du chargement de l'arène !"
+    unexpected-error: "{prefix}&cUne erreur inattendue s'est produite. Veuillez contacter un administrateur."
+
+# ██████╗ ██╗   ██╗███████╗██╗   ██╗███████╗
+# ██╔═══██╗██║   ██║██╔════╝██║   ██║██╔════╝
+# ██║   ██║██║   ██║█████╗  ██║   ██║█████╗
+# ██║▄▄ ██║██║   ██║██╔══╝  ██║   ██║██╔══╝
+# ╚██████╔╝╚██████╔╝███████╗╚██████╔╝███████╗
+#  ╚══▀▀═╝  ╚═════╝ ╚══════╝ ╚═════╝ ╚══════╝
+
+queue:
+  joined: "{prefix}&aTu as rejoint la file &e{kit}&a !"
+  left: "{prefix}&cTu as quitté la file &e{kit}&c."
+  already-in-queue: "{prefix}&cTu es déjà dans une file d'attente !"
+  not-in-queue: "{prefix}&cTu n'es pas dans une file d'attente !"
+  match-found: "{prefix}&a&lMatch trouvé ! &7Téléportation..."
+  queue-full: "{prefix}&cLa file d'attente est actuellement pleine. Réessaye plus tard."
+  status:
+    - "{prefix}&7Statut de la file pour &b{kit}&7 :"
+    - "  &7En file : &a{in_queue}"
+    - "  &7En combat : &c{fighting}"
+
+# ██╗  ██╗██╗████████╗███████╗
+# ██║ ██╔╝██║╚══██╔══╝██╔════╝
+# █████╔╝ ██║   ██║   ███████╗
+# ██╔═██╗ ██║   ██║   ╚════██║
+# ██║  ██╗██║   ██║   ███████║
+# ╚═╝  ╚═╝╚═╝   ╚═╝   ╚══════╝
+
+kit:
+  admin:
+    created: "{prefix}&aLe kit &e{kit} &aa été créé !"
+    deleted: "{prefix}&cLe kit &e{kit} &ca été supprimé !"
+    updated: "{prefix}&aLe kit &e{kit} &aa été mis à jour !"
+    already-exists: "{prefix}&cLe kit &e{kit} &cexiste déjà !"
+    not-found: "{prefix}&cLe kit &e{kit} &cn'a pas été trouvé !"
+    list-header: "{prefix}&6Kits Disponibles :"
+    list-entry: "&8- &e{kit} &7({status})"
+    enabled: "{prefix}&aLe kit &e{kit} &aa été activé !"
+    disabled: "{prefix}&cLe kit &e{kit} &ca été désactivé !"
+    icon-set: "{prefix}&aL'icône du kit &e{kit} &aa été définie !"
+    saved-from-inventory: "{prefix}&aKit &e{kit} &asauvegardé depuis ton inventaire actuel !"
+
+  custom:
+    created: "{prefix}&aKit personnalisé &e{kit} &acréé pour &b{base_kit}&a !"
+    deleted: "{prefix}&cLe kit personnalisé &e{kit} &ca été supprimé !"
+    saved: "{prefix}&aKit personnalisé &e{kit} &asauvegardé !"
+    limit-reached: "{prefix}&cTu as atteint le nombre maximum de kits personnalisés ! ({max})"
+    renamed: "{prefix}&aKit renommé en &e{name}&a !"
+    applied: "{prefix}&aKit personnalisé &e{kit} &aappliqué !"
+
+  editor:
+    opened: "{prefix}&aÉditeur de Kit ouvert pour &e{kit}&a !"
+    closed-saved: "{prefix}&aDisposition du kit sauvegardée !"
+    closed-cancelled: "{prefix}&cÉdition du kit annulée."
+    offhand-slot-info: "&7Place ton objet de main secondaire ici"
+
+  loaded: "{prefix}&7Le kit &e{kit} &7a été appliqué."
+  load-failed: "{prefix}&cÉchec du chargement du kit &e{kit}&c !"
+
+#  █████╗ ██████╗ ███████╗███╗   ██╗ █████╗
+# ██╔══██╗██╔══██╗██╔════╝████╗  ██║██╔══██╗
+# ███████║██████╔╝█████╗  ██╔██╗ ██║███████║
+# ██╔══██║██╔══██╗██╔══╝  ██║╚██╗██║██╔══██║
+# ██║  ██║██║  ██║███████╗██║ ╚████║██║  ██║
+# ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝
+
+arena:
+  created: "{prefix}&aL'arène &e{arena} &aa été créée !"
+  deleted: "{prefix}&cL'arène &e{arena} &ca été supprimée !"
+  already-exists: "{prefix}&cL'arène &e{arena} &cexiste déjà !"
+  not-found: "{prefix}&cL'arène &e{arena} &cn'a pas été trouvée !"
+
+  spawn-set:
+    pos1: "{prefix}&aPoint d'apparition 1 défini pour l'arène &e{arena}&a !"
+    pos2: "{prefix}&aPoint d'apparition 2 défini pour l'arène &e{arena}&a !"
+    spectator: "{prefix}&aPoint d'apparition spectateur défini pour l'arène &e{arena}&a !"
+
+  schematic:
+    saved: "{prefix}&aSchématique sauvegardée pour l'arène &e{arena}&a !"
+    save-failed: "{prefix}&cÉchec de la sauvegarde de la schématique pour l'arène &e{arena}&c !"
+    pasted: "{prefix}&aSchématique collée pour l'arène &e{arena}&a !"
+    paste-failed: "{prefix}&cÉchec du collage de la schématique pour l'arène &e{arena}&c !"
+    regenerating: "{prefix}&7Régénération de l'arène &e{arena}&7..."
+    regenerated: "{prefix}&aL'arène &e{arena} &aa été régénérée !"
+
+  enabled: "{prefix}&aL'arène &e{arena} &aa été activée !"
+  disabled: "{prefix}&cL'arène &e{arena} &ca été désactivée !"
+  in-use: "{prefix}&cL'arène &e{arena} &cest actuellement utilisée !"
+  available: "&aDisponible"
+  unavailable: "&cEn cours d'utilisation"
+
+  list-header: "{prefix}&6Arènes Disponibles :"
+  list-entry: "&8- &e{arena} &7({status})"
+  no-arenas: "{prefix}&cAucune arène disponible !"
+  none-available: "{prefix}&cAucune arène n'est actuellement disponible !"
+
+# ███████╗███████╗ █████╗
+# ██╔════╝██╔════╝██╔══██╗
+# █████╗  █████╗  ███████║
+# ██╔══╝  ██╔══╝  ██╔══██║
+# ██║     ██║     ██║  ██║
+# ╚═╝     ╚═╝     ╚═╝  ╚═╝
+
+ffa:
+  joined: "{prefix}&aTu as rejoint &e{arena} &aFFA !"
+  left: "{prefix}&cTu as quitté l'arène FFA."
+  already-in-ffa: "{prefix}&cTu es déjà dans une arène FFA !"
+  killed-by: "&c{player} &7a été tué par &a{killer}&7 !"
+  death: "&c{player} &7est mort !"
+  arena-full: "{prefix}&cCette arène FFA est pleine !"
+  arena-disabled: "{prefix}&cCette arène FFA est actuellement désactivée !"
+
+  created: "{prefix}&aArène FFA &e{arena} &apour le kit &b{kit} &aa été créée !"
+  deleted: "{prefix}&cL'arène FFA &e{arena} &ca été supprimée !"
+  spawn-added: "{prefix}&aPoint d'apparition ajouté à l'arène FFA &e{arena}&a ! &7({count} au total)"
+  spawn-cleared: "{prefix}&cTous les points d'apparition effacés pour l'arène FFA &e{arena}&c !"
+  regenerated: "{prefix}&aL'arène FFA &e{arena} &aa été régénérée !"
+
+# ██████╗  █████╗ ██████╗ ████████╗██╗   ██╗
+# ██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝╚██╗ ██╔╝
+# ██████╔╝███████║██████╔╝   ██║    ╚████╔╝
+# ██╔═══╝ ██╔══██║██╔══██╗   ██║     ╚██╔╝
+# ██║     ██║  ██║██║  ██║   ██║      ██║
+# ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝      ╚═╝
+
+party:
+  created: "{prefix}&aGroupe créé ! Invite des joueurs avec &e/party invite <joueur>&a !"
+  disbanded: "{prefix}&cTon groupe a été dissous."
+  already-in-party: "{prefix}&cTu es déjà dans un groupe !"
+  not-in-party: "{prefix}&cTu n'es pas dans un groupe !"
+  not-leader: "{prefix}&cSeul le chef de groupe peut faire ça !"
+
+  invite:
+    sent: "{prefix}&aInvitation envoyée à &e{player}&a !"
+    received:
+      - ""
+      - "&d&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - ""
+      - "  &e{player} &7t'a invité à rejoindre son groupe !"
+      - "  &7Membres : &f{member_count}/{max_size}"
+      - ""
+      - "  &a[ACCEPTER]              &c[REFUSER]"
+      - ""
+      - "&d&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - ""
+    expired: "{prefix}&cL'invitation de groupe de &e{player} &ca expiré."
+    no-pending: "{prefix}&cTu n'as pas d'invitation en attente de &e{player}&c !"
+    already-invited: "{prefix}&c{player} a déjà une invitation en attente !"
+
+  joined: "{prefix}&a{player} a rejoint le groupe !"
+  left: "{prefix}&c{player} a quitté le groupe."
+  kicked: "{prefix}&c{player} a été expulsé du groupe."
+  you-kicked: "{prefix}&cTu as été expulsé du groupe !"
+
+  leader-changed: "{prefix}&e{player} est maintenant le chef de groupe !"
+  promoted: "{prefix}&aTu as été promu chef de groupe !"
+
+  info:
+    header: "&d&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    title: "&d&lINFO DU GROUPE"
+    leader: "&7Chef : &e{leader}"
+    members: "&7Membres ({count}/{max}) :"
+    member-entry: "  &8- &f{player}"
+    footer: "&d&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+  chat-format: "&d[Groupe] &f{player}&7 : &f{message}"
+  chat-toggled-on: "{prefix}&aChat de groupe activé !"
+  chat-toggled-off: "{prefix}&cChat de groupe désactivé."
+
+  duel:
+    challenge-sent: "{prefix}&aDéfi de duel de groupe envoyé au groupe de &e{party_leader}&a !"
+    challenge-received:
+      - ""
+      - "&d&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - ""
+      - "  Le groupe de &e{leader} &7a défié ton groupe !"
+      - "  &7Leur taille : &f{enemy_size} &7| Ta taille : &f{your_size}"
+      - ""
+      - "  &a[ACCEPTER]              &c[REFUSER]"
+      - ""
+      - "&d&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - ""
+
+  split:
+    started: "{prefix}&aDivision du groupe commencée ! Attribution des équipes..."
+    team-assigned: "{prefix}&7Tu es dans l'{color}Équipe {team}&7 !"
+    not-enough-members: "{prefix}&cPas assez de membres pour une division {size}v{size} !"
+
+# ███████╗██████╗ ███████╗ ██████╗████████╗ █████╗ ████████╗ ██████╗ ██████╗
+# ██╔════╝██╔══██╗██╔════╝██╔════╝╚══██╔══╝██╔══██╗╚══██╔══╝██╔═══██╗██╔══██╗
+# ███████╗██████╔╝█████╗  ██║        ██║   ███████║   ██║   ██║   ██║██████╔╝
+# ╚════██║██╔═══╝ ██╔══╝  ██║        ██║   ██╔══██║   ██║   ██║   ██║██╔══██╗
+# ███████║██║     ███████╗╚██████╗   ██║   ██║  ██║   ██║   ╚██████╔╝██║  ██║
+# ╚══════╝╚═╝     ╚══════╝ ╚═════╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
+
+spectator:
+  started: "{prefix}&7Tu regardes maintenant &e{player1} &7contre &e{player2}&7 !"
+  stopped: "{prefix}&7Tu ne regardes plus."
+  not-spectating: "{prefix}&cTu ne regardes personne !"
+  cannot-spectate: "{prefix}&c{player} a désactivé les spectateurs !"
+  duel-ended: "{prefix}&7Le duel que tu regardais est terminé."
+  teleported-to: "{prefix}&7Téléporté vers &e{player}&7 !"
+
+  list-header: "{prefix}&7Spectateurs regardant ce duel :"
+  list-entry: "&8- &f{player}"
+  no-spectators: "{prefix}&7Personne ne regarde ce duel."
+
+# ███████╗████████╗ █████╗ ████████╗███████╗
+# ██╔════╝╚══██╔══╝██╔══██╗╚══██╔══╝██╔════╝
+# ███████╗   ██║   ███████║   ██║   ███████╗
+# ╚════██║   ██║   ██╔══██║   ██║   ╚════██║
+# ███████║   ██║   ██║  ██║   ██║   ███████║
+# ╚══════╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝   ╚══════╝
+
+stats:
+  header: "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  title: "&e&lStatistiques de {player}"
+  entries:
+    kills: "&7Éliminations : &a{value}"
+    deaths: "&7Morts : &c{value}"
+    kd: "&7Ratio É/M : &e{value}"
+    wins: "&7Victoires : &a{value}"
+    losses: "&7Défaites : &c{value}"
+    win-rate: "&7Taux de Victoire : &b{value}%"
+    streak: "&7Série Actuelle : &6{value}"
+    best-streak: "&7Meilleure Série : &6{value}"
+    elo: "&7Classement ELO : &d{value}"
+  footer: "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+  leaderboard:
+    header: "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    title: "&e&lClassement - {category}"
+    entry: "&e#{rank} &f{player} &7- &a{value}"
+    footer: "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+  reset:
+    self: "{prefix}&cTes statistiques ont été réinitialisées !"
+    other: "{prefix}&cLes statistiques de &e{player} &cont été réinitialisées !"
+
+# ███████╗███████╗████████╗████████╗██╗███╗   ██╗ ██████╗ ███████╗
+# ██╔════╝██╔════╝╚══██╔══╝╚══██╔══╝██║████╗  ██║██╔════╝ ██╔════╝
+# ███████╗█████╗     ██║      ██║   ██║██╔██╗ ██║██║  ███╗███████╗
+# ╚════██║██╔══╝     ██║      ██║   ██║██║╚██╗██║██║   ██║╚════██║
+# ███████║███████╗   ██║      ██║   ██║██║ ╚████║╚██████╔╝███████║
+# ╚══════╝╚══════╝   ╚═╝      ╚═╝   ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
+
+settings:
+  menu-title: "&8Paramètres"
+  toggle:
+    enabled: "&aActivé"
+    disabled: "&cDésactivé"
+
+  options:
+    scoreboard:
+      name: "&6Tableau de bord"
+      description:
+        - "&7Activer/désactiver le tableau"
+        - "&7de bord sur ton écran."
+      toggled-on: "{prefix}&aTableau de bord activé !"
+      toggled-off: "{prefix}&cTableau de bord désactivé."
+
+    death-messages:
+      name: "&cMessages de Mort"
+      description:
+        - "&7Activer/désactiver les messages"
+        - "&7de mort dans les duels."
+      toggled-on: "{prefix}&aMessages de mort activés !"
+      toggled-off: "{prefix}&cMessages de mort désactivés."
+
+    duel-requests:
+      name: "&bDemandes de Duel"
+      description:
+        - "&7Activer/désactiver la réception"
+        - "&7des demandes de duel."
+      toggled-on: "{prefix}&aDemandes de duel activées !"
+      toggled-off: "{prefix}&cDemandes de duel désactivées."
+
+    spectators:
+      name: "&dAutoriser les Spectateurs"
+      description:
+        - "&7Activer/désactiver si les joueurs"
+        - "&7peuvent regarder tes duels."
+      toggled-on: "{prefix}&aSpectateurs autorisés !"
+      toggled-off: "{prefix}&cSpectateurs bloqués."
+
+    party-invites:
+      name: "&eInvitations de Groupe"
+      description:
+        - "&7Activer/désactiver la réception"
+        - "&7des invitations de groupe."
+      toggled-on: "{prefix}&aInvitations de groupe activées !"
+      toggled-off: "{prefix}&cInvitations de groupe désactivées."
+
+    sounds:
+      name: "&aSons"
+      description:
+        - "&7Activer/désactiver les effets"
+        - "&7sonores du plugin."
+      toggled-on: "{prefix}&aSons activés !"
+      toggled-off: "{prefix}&cSons désactivés."
+
+#  ██████╗ ██╗   ██╗██╗
+# ██╔════╝ ██║   ██║██║
+# ██║  ███╗██║   ██║██║
+# ██║   ██║██║   ██║██║
+# ╚██████╔╝╚██████╔╝██║
+#  ╚═════╝  ╚═════╝ ╚═╝
+
+gui:
+  titles:
+    queue-menu: "&8Sélectionne un Kit"
+    duel-request: "&8Paramètres de Duel"
+    party-menu: "&8Menu de Groupe"
+    kit-editor: "&8Éditeur de Kit - {kit}"
+    ffa-menu: "&8Arènes FFA"
+    settings-menu: "&8Paramètres"
+    arena-select: "&8Sélectionner une Arène"
+    rounds-select: "&8Sélectionner les Manches"
+    spectate-menu: "&8Duels Actifs"
+    kit-select: "&8Sélectionner un Kit"
+    player-list: "&8Sélectionner un Joueur"
+    custom-kits: "&8Tes Kits Personnalisés"
+    confirmation: "&8Confirmer l'Action"
+
+  items:
+    close:
+      name: "&c&lFermer"
+      lore:
+        - "&7Clique pour fermer ce menu"
+
+    back:
+      name: "&e&lRetour"
+      lore:
+        - "&7Clique pour revenir"
+
+    confirm:
+      name: "&a&lConfirmer"
+      lore:
+        - "&7Clique pour confirmer"
+
+    cancel:
+      name: "&c&lAnnuler"
+      lore:
+        - "&7Clique pour annuler"
+
+    next-page:
+      name: "&a&lPage Suivante"
+      lore:
+        - "&7Page {current}/{max}"
+
+    previous-page:
+      name: "&c&lPage Précédente"
+      lore:
+        - "&7Page {current}/{max}"
+
+    kit-item:
+      lore:
+        - ""
+        - "&7En file : &a{in_queue}"
+        - "&7En combat : &c{fighting}"
+        - ""
+        - "&eClique pour rejoindre la file !"
+
+    rounds-item:
+      name: "&6Manches : &e{rounds}"
+      lore:
+        - ""
+        - "&7Clic gauche pour augmenter"
+        - "&7Clic droit pour diminuer"
+        - ""
+        - "&7Min : {min} | Max : {max}"
+
+    win-condition-item:
+      name: "&bCondition de Victoire"
+      lore:
+        - ""
+        - "&7Actuelle : &e{condition}"
+        - ""
+        - "&eMeilleur de &7- Premier à gagner"
+        - "&e  (manches/2)+1"
+        - ""
+        - "&eJouer Tout &7- Jouer toutes les manches,"
+        - "&e  le plus de victoires gagne"
+        - ""
+        - "&eClique pour changer !"
+
+    send-request:
+      name: "&a&lEnvoyer la Demande de Duel"
+      lore:
+        - ""
+        - "&7Kit : &b{kit}"
+        - "&7Arène : &d{arena}"
+        - "&7Manches : &e{rounds}"
+        - "&7Condition : &6{condition}"
+        - ""
+        - "&eClique pour envoyer !"
+
+    offhand-slot:
+      name: "&e&lSlot Main Secondaire"
+      lore:
+        - ""
+        - "&7Place ton objet de main"
+        - "&7secondaire ici (Bouclier, Totem, etc.)"
+        - ""
+        - "&eFais glisser les objets ici !"
+
+    save-kit:
+      name: "&a&lSauvegarder le Kit"
+      lore:
+        - "&7Sauvegarder ta disposition de kit"
+
+    reset-kit:
+      name: "&c&lRéinitialiser le Kit"
+      lore:
+        - "&7Réinitialiser à la disposition par défaut"
+
+    ffa-arena-item:
+      lore:
+        - ""
+        - "&7Kit : &b{kit}"
+        - "&7Joueurs : &e{players}"
+        - ""
+        - "&eClique pour rejoindre !"
+
+    duel-item:
+      name: "&e{player1} &7vs &e{player2}"
+      lore:
+        - ""
+        - "&7Kit : &b{kit}"
+        - "&7Arène : &d{arena}"
+        - "&7Score : &a{score1} &7- &c{score2}"
+        - ""
+        - "&eClique pour regarder !"
+
+    queue-menu:
+      name: "&b&lMenu File d'Attente"
+      lore:
+        - ""
+        - "&7Clique pour ouvrir le menu de file"
+        - "&7et trouver un adversaire !"
+        - ""
+        - "&eClique pour ouvrir !"
+
+    party-menu:
+      name: "&d&lMenu Groupe"
+      lore:
+        - ""
+        - "&7Crée ou gère ton groupe"
+        - "&7Invite des amis et combattez ensemble !"
+        - ""
+        - "&eClique pour ouvrir !"
+
+    kit-editor:
+      name: "&a&lÉditeur de Kit"
+      lore:
+        - ""
+        - "&7Personnalise tes kits"
+        - "&7Arrange les objets à ta préférence !"
+        - ""
+        - "&eClique pour ouvrir !"
+
+    ffa-menu:
+      name: "&c&lArènes FFA"
+      lore:
+        - ""
+        - "&7Rejoins une arène Tous contre Tous"
+        - "&7Combats tout le monde !"
+        - ""
+        - "&eClique pour ouvrir !"
+
+    settings-menu:
+      name: "&6&lParamètres"
+      lore:
+        - ""
+        - "&7Personnalise ton expérience"
+        - "&7Active ou désactive des options !"
+        - ""
+        - "&eClique pour ouvrir !"
+
+    spectate-menu:
+      name: "&3&lObserver"
+      lore:
+        - ""
+        - "&7Regarde les duels en cours"
+        - "&7Apprends des autres joueurs !"
+        - ""
+        - "&eClique pour ouvrir !"
+
+    stats-menu:
+      name: "&9&lStatistiques"
+      lore:
+        - ""
+        - "&7Consulte tes statistiques"
+        - "&7Éliminations, Morts, K/M et plus !"
+        - ""
+        - "&eClique pour voir !"
+
+    leave-lobby:
+      name: "&c&lQuitter le Lobby"
+      lore:
+        - ""
+        - "&7Retourner au serveur hub"
+        - ""
+        - "&eClique pour quitter !"
+
+
+# ==========================================
+# RESTRICTIONS DE MONDE
+# ==========================================
+world-restriction:
+  blocked-world: "&cCette fonctionnalité n'est pas disponible dans ce monde !"
+  command-blocked: "&cLes commandes de duels sont désactivées dans ce monde !"
+  lobby-items-blocked: "&cLes objets du lobby ne sont pas disponibles dans ce monde !"
+  queue-blocked: "&cTu ne peux pas rejoindre la file depuis ce monde !"
+  duel-blocked: "&cTu ne peux pas commencer un duel depuis ce monde !"
+  ffa-blocked: "&cLe FFA n'est pas disponible dans ce monde !"
+  spectate-blocked: "&cRegarder n'est pas disponible depuis ce monde !"
+
+# ██╗  ██╗███████╗██╗     ██████╗
+# ██║  ██║██╔════╝██║     ██╔══██╗
+# ███████║█████╗  ██║     ██████╔╝
+# ██╔══██║██╔══╝  ██║     ██╔═══╝
+# ██║  ██║███████╗███████╗██║
+# ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝
+
+help:
+  header:
+    - "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    - "&e&lUltimate Duels &7- &fAide"
+    - "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+  player-commands:
+    - ""
+    - "&6Commandes Joueur :"
+    - "&e/duel <joueur> &7- Défier un joueur"
+    - "&e/duel accept <joueur> &7- Accepter une demande de duel"
+    - "&e/duel deny <joueur> &7- Refuser une demande de duel"
+    - "&e/queue <kit> &7- Rejoindre une file de kit"
+    - "&e/leavequeue &7- Quitter la file"
+    - "&e/party &7- Ouvrir le menu de groupe"
+    - "&e/stats [joueur] &7- Voir les statistiques"
+    - "&e/spectate &7- Ouvrir le menu spectateur"
+    - "&e/settings &7- Ouvrir le menu des paramètres"
+    - "&e/language &7- Changer de langue"
+
+  admin-commands:
+    - ""
+    - "&cCommandes Admin :"
+    - "&e/duels reload &7- Recharger la configuration"
+    - "&e/duels kit create <nom> &7- Créer un kit"
+    - "&e/duels kit delete <nom> &7- Supprimer un kit"
+    - "&e/duels kit save <nom> &7- Sauvegarder le kit depuis l'inventaire"
+    - "&e/duels arena create <nom> &7- Créer une arène"
+    - "&e/duels arena delete <nom> &7- Supprimer une arène"
+    - "&e/duels arena setspawn <nom> <1/2> &7- Définir le point d'apparition"
+    - "&e/duels arena save <nom> &7- Sauvegarder la schématique d'arène"
+    - "&e/duels setlobby &7- Définir le spawn du lobby"
+
+  footer:
+    - ""
+    - "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"

@@ -1,0 +1,705 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+#                        ULTIMATE DUELS - РУССКИЙ ЯЗЫК
+#                                  Версия 1.0.1
+# ═══════════════════════════════════════════════════════════════════════════════
+
+language:
+  code: "ru"
+  name: "Русский"
+  flag: "🇷🇺"
+  version: "1.0.1"
+
+# ██████╗ ███████╗███╗   ██╗███████╗██████╗  █████╗ ██╗
+# ██╔════╝ ██╔════╝████╗  ██║██╔════╝██╔══██╗██╔══██╗██║
+# ██║  ███╗█████╗  ██╔██╗ ██║█████╗  ██████╔╝███████║██║
+# ██║   ██║██╔══╝  ██║╚██╗██║██╔══╝  ██╔══██╗██╔══██║██║
+# ╚██████╔╝███████╗██║ ╚████║███████╗██║  ██║██║  ██║███████╗
+#  ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+
+general:
+  prefix: "&8[&6UltimateDuels&8] "
+  join-broadcast: "&e{player} &7зашёл на сервер!"
+  quit-broadcast: "&e{player} &7покинул сервер."
+
+  welcome-back: "&7С возвращением, &e{player}&7!"
+  welcome-stats: "&7Ваша статистика: &a{wins} Побед &7| &c{losses} Поражений &7| &6{elo} Рейтинг"
+  welcome-new: "&7Добро пожаловать, &e{player}&7!"
+  welcome-hint: "&7Используйте предметы на хотбаре для начала."
+
+  no-permission: "{prefix}&cУ вас нет прав на это действие!"
+  player-only: "{prefix}&cЭту команду могут использовать только игроки!"
+  console-only: "{prefix}&cЭту команду можно использовать только из консоли!"
+  player-not-found: "{prefix}&cИгрок &e{player} &cне найден!"
+  player-offline: "{prefix}&cИгрок &e{player} &cне в сети!"
+  player-not-in-lobby: "{prefix}&cВы должны быть в лобби для этого действия!"
+  player-busy: "{prefix}&c{player} сейчас занят!"
+  invalid-number: "{prefix}&c'{input}' не является числом!"
+  invalid-argument: "{prefix}&cНеверный аргумент! Использование: &e{usage}"
+  reload-start: "{prefix}&7Перезагрузка конфигурации..."
+  reload-complete: "{prefix}&aКонфигурация успешно перезагружена!"
+  reload-failed: "{prefix}&cНе удалось перезагрузить конфигурацию! Проверьте консоль."
+  plugin-disabled: "{prefix}&cЭта функция в данный момент отключена!"
+  cooldown: "{prefix}&cПожалуйста, подождите &e{time} &cперед повторным действием!"
+  database-error: "{prefix}&cПроизошла ошибка базы данных. Попробуйте позже."
+  join-message: "{prefix}&aДобро пожаловать в &6Ultimate Duels&a! Напишите &e/duel &aдля начала."
+  quit-message: "&e{player} &7покинул сервер."
+  staff-notification: "&8[&6Персонал&8] &7{message}"
+  player-in-duel: "{prefix}&cВы не можете использовать эту команду во время дуэли!"
+  player-in-ffa: "{prefix}&cВы не можете использовать эту команду на FFA арене!"
+  player-spectating: "{prefix}&cВы не можете использовать эту команду во время наблюдения!"
+  language-menu-title: "&6&l▬▬▬▬▬▬ ВЫБОР ЯЗЫКА ▬▬▬▬▬▬"
+  language-menu-current: "&7Текущий язык: &a{language}"
+  language-menu-available: "&eДоступные языки:"
+  language-menu-click: "&eНажмите для выбора"
+  language-changed: "{prefix}&aЯзык изменён на &e{language}&a!"
+  language-already-selected: "{prefix}&cВы уже используете &e{language}&c!"
+  language-not-available: "{prefix}&cЯзык &e{language} &cнедоступен!"
+  language-reload-success: "{prefix}&aЯзыки успешно перезагружены!"
+
+
+# ██████╗ ██╗   ██╗███████╗██╗
+# ██╔══██╗██║   ██║██╔════╝██║
+# ██║  ██║██║   ██║█████╗  ██║
+# ██║  ██║██║   ██║██╔══╝  ██║
+# ██████╔╝╚██████╔╝███████╗███████╗
+# ╚═════╝  ╚═════╝ ╚══════╝╚══════╝
+
+duel:
+  cannot-duel-self: "{prefix}&cВы не можете вызвать себя на дуэль!"
+  already-in-match: "{prefix}&cВы уже участвуете в матче!"
+  target-in-match: "{prefix}&c{player} уже участвует в матче!"
+  sender-in-queue: "{prefix}&cВы находитесь в очереди! Сначала покиньте её командой /leavequeue"
+  target-in-queue: "{prefix}&c{player} находится в очереди!"
+  kit-not-found: "{prefix}&cНабор &e{kit} &cне существует!"
+  arena-not-found: "{prefix}&cАрена &e{arena} &cне существует!"
+  no-available-arenas: "{prefix}&cВ данный момент нет доступных арен!"
+
+  request:
+    sent-header: "&a&lЗАПРОС НА ДУЭЛЬ ОТПРАВЛЕН!"
+    sent-target: "&7Цель: &e{target}"
+    sent-kit: "&7Набор: &e{kit}"
+    sent-arena: "&7Арена: &e{arena}"
+    sent-rounds: "&7Раунды: &e{rounds}"
+    sent-waiting: "&7Ожидание ответа..."
+    sent-success: "&aЗапрос на дуэль отправлен игроку &e{target}&a!"
+
+    received-header: "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    received-title: "&e&lЗАПРОС НА ДУЭЛЬ!"
+    received-from: "&7От: &a{sender}"
+    received-kit: "&7Набор: &e{kit}"
+    received-arena: "&7Арена: &e{arena}"
+    received-rounds: "&7Раунды: &e{rounds}"
+    received-accept: "&a/accept &7- Принять дуэль"
+    received-deny: "&c/deny &7- Отклонить дуэль"
+    received-footer: "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+    received-hover-accept: "&aНажмите, чтобы принять дуэль!"
+    received-hover-deny: "&cНажмите, чтобы отклонить дуэль!"
+
+    expired-sender: "{prefix}&cВаш запрос на дуэль к &e{target} &cистёк."
+    expired-receiver: "{prefix}&cЗапрос на дуэль от &e{player} &cистёк."
+
+    cancelled: "{prefix}&cВы отменили запрос на дуэль к &e{target}&c."
+    cancelled-receiver: "{prefix}&c{player} &cотменил свой запрос на дуэль."
+
+    already-sent: "{prefix}&cУ вас уже есть активный запрос на дуэль к &e{target}&c!"
+    already-pending: "{prefix}&cУ вас уже есть активный запрос на дуэль!"
+
+    self-duel: "{prefix}&cВы не можете вызвать себя на дуэль!"
+    disabled-target: "{prefix}&c{target} отключил запросы на дуэль!"
+    in-duel: "{prefix}&cВы уже участвуете в дуэли!"
+    target-in-duel: "{prefix}&c{target} уже участвует в дуэли!"
+    in-queue: "{prefix}&cВы находитесь в очереди! Сначала покиньте её."
+    target-in-queue: "{prefix}&c{target} находится в очереди!"
+    no-pending: "{prefix}&cУ вас нет активных запросов на дуэль от &e{player}&c!"
+
+  accept:
+    no-request: "{prefix}&cУ вас нет активных запросов на дуэль!"
+    expired: "{prefix}&cЭтот запрос на дуэль истёк!"
+    sender-offline: "{prefix}&cИгрок, отправивший запрос, больше не в сети!"
+    already-in-match: "{prefix}&cОдин из игроков уже участвует в матче!"
+    no-arenas: "{prefix}&cВ данный момент нет доступных арен! Попробуйте позже."
+    accepted-you: "&aВы приняли запрос на дуэль от &e{sender}&a!"
+    accepted-them: "&a{target} &aпринял ваш запрос на дуэль!"
+    success: "&aЗапрос на дуэль принят!"
+
+  deny:
+    no-request: "{prefix}&cУ вас нет активных запросов на дуэль!"
+    denied-you: "&cВы отклонили запрос на дуэль."
+    denied-them: "&c{player} отклонил ваш запрос на дуэль."
+
+  countdown:
+    title: "&c{seconds}"
+    subtitle: "&7Приготовьтесь к бою!"
+    fight-title: "&a&lБОЙ!"
+    fight-subtitle: "&7Удачи!"
+    starting: "{prefix}&7Дуэль начнётся через &e{seconds} &7секунд..."
+
+  round:
+    start: "{prefix}&6Раунд &e{round}&6/&e{max_rounds} &6начался!"
+    end: "{prefix}&e{winner} &6выиграл Раунд &e{round}&6!"
+    won: "&a&lРАУНД ВЫИГРАН! &7Счёт: &e{score}"
+    lost: "&c&lРАУНД ПРОИГРАН! &7Счёт: &e{score}"
+    starting: "&e&lРаунд {round} начинается..."
+    preparing: "&e&lПодготовка к раунду {round}..."
+    fight: "&a&lБОЙ!"
+    player-died: "&c{player} &7был убит игроком &a{killer}&7!"
+    reset: "{prefix}&7Подготовка к следующему раунду..."
+
+  arena:
+    regenerating: "&e&lПодготовка арены к следующему раунду..."
+    ready: "&a&lАрена готова! Начало раунда {round}..."
+    regen-failed: "&e&lРегенерация арены пропущена - продолжение матча..."
+    restoring: "&7Восстановление арены &e{arena}&7..."
+    restored: "&aАрена &e{arena} &aвосстановлена!"
+
+  match:
+    victory-title: "&a&lПОБЕДА!"
+    victory-subtitle: "&7Вы выиграли дуэль!"
+    defeat-title: "&c&lПОРАЖЕНИЕ"
+    defeat-subtitle: "&7В следующий раз повезёт!"
+    draw-title: "&e&lНИЧЬЯ"
+    draw-subtitle: "&7Равный счёт!"
+
+    winner-broadcast: "&6{winner} &eпобедил &6{loser} &eв дуэли! &7(&b{kit}&7)"
+
+    statistics:
+      - ""
+      - "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - "&e&lРЕЗУЛЬТАТЫ ДУЭЛИ"
+      - "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - ""
+      - "&7Победитель: &a{winner}"
+      - "&7Проигравший: &c{loser}"
+      - "&7Финальный счёт: &e{score}"
+      - ""
+      - "&7Набор: &b{kit}"
+      - "&7Арена: &d{arena}"
+      - "&7Длительность: &f{duration}"
+      - ""
+      - "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - ""
+
+  forfeit:
+    self: "{prefix}&cВы сдались в дуэли!"
+    opponent: "{prefix}&e{player} &cсдался в дуэли! Вы победили!"
+    broadcast: "&e{player} &cсдался в дуэли против &e{opponent}&c!"
+
+  disconnect:
+    self: "{prefix}&cВы отключились от дуэли."
+    opponent: "{prefix}&e{player} &cотключился! Вы победили!"
+    broadcast: "&e{player} &cотключился от дуэли!"
+
+  spectator:
+    round-ended: "&7Раунд {round}/{total} завершён! Счёт: &e{score}"
+    round-starting: "&7Начало раунда {round}..."
+    match-over: "&a&lМАТЧ ОКОНЧЕН! &7Победитель: &e{winner}"
+    match-cancelled: "&cМатч был отменён."
+
+  teleport:
+    teleporting: "&7Телепортация на арену..."
+    teleported: "&aТелепортированы на арену &e{arena}&a!"
+    failed: "&cНе удалось телепортироваться на арену!"
+
+  error:
+    match-cancelled: "{prefix}&cМатч был отменён: &e{reason}"
+    kit-load-failed: "{prefix}&cНе удалось загрузить набор!"
+    arena-load-failed: "{prefix}&cНе удалось загрузить арену!"
+    unexpected-error: "{prefix}&cПроизошла неожиданная ошибка. Пожалуйста, обратитесь к администратору."
+
+# ██████╗ ██╗   ██╗███████╗██╗   ██╗███████╗
+# ██╔═══██╗██║   ██║██╔════╝██║   ██║██╔════╝
+# ██║   ██║██║   ██║█████╗  ██║   ██║█████╗
+# ██║▄▄ ██║██║   ██║██╔══╝  ██║   ██║██╔══╝
+# ╚██████╔╝╚██████╔╝███████╗╚██████╔╝███████╗
+#  ╚══▀▀═╝  ╚═════╝ ╚══════╝ ╚═════╝ ╚══════╝
+
+queue:
+  joined: "{prefix}&aВы присоединились к очереди &e{kit}&a!"
+  left: "{prefix}&cВы покинули очередь &e{kit}&c."
+  already-in-queue: "{prefix}&cВы уже находитесь в очереди!"
+  not-in-queue: "{prefix}&cВы не находитесь в очереди!"
+  match-found: "{prefix}&a&lМатч найден! &7Телепортация..."
+  queue-full: "{prefix}&cОчередь переполнена. Попробуйте позже."
+  status:
+    - "{prefix}&7Статус очереди для &b{kit}&7:"
+    - "  &7В очереди: &a{in_queue}"
+    - "  &7Сражаются: &c{fighting}"
+
+kit:
+  admin:
+    created: "{prefix}&aНабор &e{kit} &aсоздан!"
+    deleted: "{prefix}&cНабор &e{kit} &cудалён!"
+    updated: "{prefix}&aНабор &e{kit} &aобновлён!"
+    already-exists: "{prefix}&cНабор &e{kit} &cуже существует!"
+    not-found: "{prefix}&cНабор &e{kit} &cне найден!"
+    list-header: "{prefix}&6Доступные наборы:"
+    list-entry: "&8- &e{kit} &7({status})"
+    enabled: "{prefix}&aНабор &e{kit} &aвключен!"
+    disabled: "{prefix}&cНабор &e{kit} &cотключен!"
+    icon-set: "{prefix}&aИконка для набора &e{kit} &aустановлена!"
+    saved-from-inventory: "{prefix}&aНабор &e{kit} &aсохранён из вашего инвентаря!"
+
+  custom:
+    created: "{prefix}&aПользовательский набор &e{kit} &aсоздан для &b{base_kit}&a!"
+    deleted: "{prefix}&cПользовательский набор &e{kit} &cудалён!"
+    saved: "{prefix}&aПользовательский набор &e{kit} &aсохранён!"
+    limit-reached: "{prefix}&cВы достигли максимального количества пользовательских наборов! ({max})"
+    renamed: "{prefix}&aНабор переименован в &e{name}&a!"
+    applied: "{prefix}&aПрименён пользовательский набор &e{kit}&a!"
+
+  editor:
+    opened: "{prefix}&aРедактор набора открыт для &e{kit}&a!"
+    closed-saved: "{prefix}&aКомпоновка набора сохранена!"
+    closed-cancelled: "{prefix}&cРедактирование набора отменено."
+    offhand-slot-info: "&7Поместите предмет для левой руки сюда"
+
+  loaded: "{prefix}&7Набор &e{kit} &7применён."
+  load-failed: "{prefix}&cНе удалось загрузить набор &e{kit}&c!"
+
+arena:
+  created: "{prefix}&aАрена &e{arena} &aсоздана!"
+  deleted: "{prefix}&cАрена &e{arena} &cудалена!"
+  already-exists: "{prefix}&cАрена &e{arena} &cуже существует!"
+  not-found: "{prefix}&cАрена &e{arena} &cне найдена!"
+
+  spawn-set:
+    pos1: "{prefix}&aТочка спавна 1 установлена для арены &e{arena}&a!"
+    pos2: "{prefix}&aТочка спавна 2 установлена для арены &e{arena}&a!"
+    spectator: "{prefix}&aТочка спавна зрителей установлена для арены &e{arena}&a!"
+
+  schematic:
+    saved: "{prefix}&aСхема сохранена для арены &e{arena}&a!"
+    save-failed: "{prefix}&cНе удалось сохранить схему для арены &e{arena}&c!"
+    pasted: "{prefix}&aСхема вставлена для арены &e{arena}&a!"
+    paste-failed: "{prefix}&cНе удалось вставить схему для арены &e{arena}&c!"
+    regenerating: "{prefix}&7Восстановление арены &e{arena}&7..."
+    regenerated: "{prefix}&aАрена &e{arena} &aвосстановлена!"
+
+  enabled: "{prefix}&aАрена &e{arena} &aвключена!"
+  disabled: "{prefix}&cАрена &e{arena} &cотключена!"
+  in-use: "{prefix}&cАрена &e{arena} &cсейчас используется!"
+  available: "&aДоступна"
+  unavailable: "&cЗанята"
+
+  list-header: "{prefix}&6Доступные арены:"
+  list-entry: "&8- &e{arena} &7({status})"
+  no-arenas: "{prefix}&cНет доступных арен!"
+  none-available: "{prefix}&cВ данный момент нет доступных арен!"
+
+ffa:
+  joined: "{prefix}&aВы присоединились к FFA &e{arena}&a!"
+  left: "{prefix}&cВы покинули арену FFA."
+  already-in-ffa: "{prefix}&cВы уже находитесь на арене FFA!"
+  killed-by: "&c{player} &7был убит игроком &a{killer}&7!"
+  death: "&c{player} &7погиб!"
+  arena-full: "{prefix}&cЭта арена FFA переполнена!"
+  arena-disabled: "{prefix}&cЭта арена FFA в данный момент отключена!"
+
+  created: "{prefix}&aАрена FFA &e{arena} &aдля набора &b{kit} &aсоздана!"
+  deleted: "{prefix}&cАрена FFA &e{arena} &cудалена!"
+  spawn-added: "{prefix}&aТочка спавна добавлена на арену FFA &e{arena}&a! &7({count} всего)"
+  spawn-cleared: "{prefix}&cВсе точки спавна удалены для арены FFA &e{arena}&c!"
+  regenerated: "{prefix}&aАрена FFA &e{arena} &aвосстановлена!"
+
+party:
+  created: "{prefix}&aГруппа создана! Приглашайте игроков командой &e/party invite <игрок>&a!"
+  disbanded: "{prefix}&cВаша группа расформирована."
+  already-in-party: "{prefix}&cВы уже состоите в группе!"
+  not-in-party: "{prefix}&cВы не состоите в группе!"
+  not-leader: "{prefix}&cТолько лидер группы может это сделать!"
+
+  invite:
+    sent: "{prefix}&aПриглашение отправлено игроку &e{player}&a!"
+    received:
+      - ""
+      - "&d&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - ""
+      - "  &e{player} &7пригласил вас в свою группу!"
+      - "  &7Участников: &f{member_count}/{max_size}"
+      - ""
+      - "  &a[ПРИНЯТЬ]              &c[ОТКЛОНИТЬ]"
+      - ""
+      - "&d&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - ""
+    expired: "{prefix}&cПриглашение в группу от &e{player} &cистекло."
+    no-pending: "{prefix}&cУ вас нет активных приглашений от &e{player}&c!"
+    already-invited: "{prefix}&c{player} уже имеет активное приглашение!"
+
+  joined: "{prefix}&a{player} присоединился к группе!"
+  left: "{prefix}&c{player} покинул группу."
+  kicked: "{prefix}&c{player} был исключён из группы."
+  you-kicked: "{prefix}&cВы были исключены из группы!"
+
+  leader-changed: "{prefix}&e{player} теперь лидер группы!"
+  promoted: "{prefix}&aВы повышены до лидера группы!"
+
+  info:
+    header: "&d&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    title: "&d&lИНФОРМАЦИЯ О ГРУППЕ"
+    leader: "&7Лидер: &e{leader}"
+    members: "&7Участники ({count}/{max}):"
+    member-entry: "  &8- &f{player}"
+    footer: "&d&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+  chat-format: "&d[Группа] &f{player}&7: &f{message}"
+  chat-toggled-on: "{prefix}&aЧат группы включён!"
+  chat-toggled-off: "{prefix}&cЧат группы отключён."
+
+  duel:
+    challenge-sent: "{prefix}&aВызов на групповую дуэль отправлен группе &e{party_leader}&a!"
+    challenge-received:
+      - ""
+      - "&d&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - ""
+      - "  &eГруппа {leader} &7вызвала вашу группу!"
+      - "  &7Их размер: &f{enemy_size} &7| Ваш размер: &f{your_size}"
+      - ""
+      - "  &a[ПРИНЯТЬ]              &c[ОТКЛОНИТЬ]"
+      - ""
+      - "&d&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - ""
+
+  split:
+    started: "{prefix}&aРазделение группы началось! Назначение команд..."
+    team-assigned: "{prefix}&7Вы в {color}Команде {team}&7!"
+    not-enough-members: "{prefix}&cНедостаточно участников для {size}v{size} разделения!"
+
+spectator:
+  started: "{prefix}&7Вы теперь наблюдаете за &e{player1} &7против &e{player2}&7!"
+  stopped: "{prefix}&7Вы больше не наблюдаете."
+  not-spectating: "{prefix}&cВы ни за кем не наблюдаете!"
+  cannot-spectate: "{prefix}&c{player} отключил наблюдателей!"
+  duel-ended: "{prefix}&7Дуэль, за которой вы наблюдали, завершилась."
+  teleported-to: "{prefix}&7Телепортация к &e{player}&7!"
+
+  list-header: "{prefix}&7Наблюдатели, смотрящие эту дуэль:"
+  list-entry: "&8- &f{player}"
+  no-spectators: "{prefix}&7Никто не наблюдает за этой дуэлью."
+
+stats:
+  header: "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  title: "&e&lСтатистика {player}"
+  entries:
+    kills: "&7Убийства: &a{value}"
+    deaths: "&7Смерти: &c{value}"
+    kd: "&7Соотношение У/С: &e{value}"
+    wins: "&7Победы: &a{value}"
+    losses: "&7Поражения: &c{value}"
+    win-rate: "&7Процент побед: &b{value}%"
+    streak: "&7Текущая серия: &6{value}"
+    best-streak: "&7Лучшая серия: &6{value}"
+    elo: "&7Рейтинг ELO: &d{value}"
+  footer: "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+  leaderboard:
+    header: "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    title: "&e&lТаблица лидеров - {category}"
+    entry: "&e#{rank} &f{player} &7- &a{value}"
+    footer: "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+  reset:
+    self: "{prefix}&cВаша статистика сброшена!"
+    other: "{prefix}&cСтатистика игрока &e{player} &cсброшена!"
+
+settings:
+  menu-title: "&8Настройки"
+  toggle:
+    enabled: "&aВключено"
+    disabled: "&cОтключено"
+
+  options:
+    scoreboard:
+      name: "&6Табло"
+      description:
+        - "&7Переключить отображение"
+        - "&7табло на экране."
+      toggled-on: "{prefix}&aТабло включено!"
+      toggled-off: "{prefix}&cТабло отключено."
+
+    death-messages:
+      name: "&cСообщения о смерти"
+      description:
+        - "&7Переключить сообщения"
+        - "&7о смерти в дуэлях."
+      toggled-on: "{prefix}&aСообщения о смерти включены!"
+      toggled-off: "{prefix}&cСообщения о смерти отключены."
+
+    duel-requests:
+      name: "&bЗапросы на дуэль"
+      description:
+        - "&7Переключить получение"
+        - "&7запросов на дуэль от игроков."
+      toggled-on: "{prefix}&aЗапросы на дуэль включены!"
+      toggled-off: "{prefix}&cЗапросы на дуэль отключены."
+
+    spectators:
+      name: "&dРазрешить наблюдателей"
+      description:
+        - "&7Переключить, могут ли игроки"
+        - "&7наблюдать за вашими дуэлями."
+      toggled-on: "{prefix}&aНаблюдатели разрешены!"
+      toggled-off: "{prefix}&cНаблюдатели заблокированы."
+
+    party-invites:
+      name: "&eПриглашения в группу"
+      description:
+        - "&7Переключить получение"
+        - "&7приглашений в группу от игроков."
+      toggled-on: "{prefix}&aПриглашения в группу включены!"
+      toggled-off: "{prefix}&cПриглашения в группу отключены."
+
+    sounds:
+      name: "&aЗвуки"
+      description:
+        - "&7Переключить звуковые"
+        - "&7эффекты плагина."
+      toggled-on: "{prefix}&aЗвуки включены!"
+      toggled-off: "{prefix}&cЗвуки отключены."
+
+gui:
+  titles:
+    queue-menu: "&8Выбор набора"
+    duel-request: "&8Настройки дуэли"
+    party-menu: "&8Меню группы"
+    kit-editor: "&8Редактор набора - {kit}"
+    ffa-menu: "&8Арены FFA"
+    settings-menu: "&8Настройки"
+    arena-select: "&8Выбор арены"
+    rounds-select: "&8Выбор раундов"
+    spectate-menu: "&8Активные дуэли"
+    kit-select: "&8Выбор набора"
+    player-list: "&8Выбор игрока"
+    custom-kits: "&8Ваши наборы"
+    confirmation: "&8Подтверждение"
+
+  items:
+    close:
+      name: "&c&lЗакрыть"
+      lore:
+        - "&7Нажмите, чтобы закрыть меню"
+
+    back:
+      name: "&e&lНазад"
+      lore:
+        - "&7Нажмите, чтобы вернуться"
+
+    confirm:
+      name: "&a&lПодтвердить"
+      lore:
+        - "&7Нажмите для подтверждения"
+
+    cancel:
+      name: "&c&lОтмена"
+      lore:
+        - "&7Нажмите для отмены"
+
+    next-page:
+      name: "&a&lСледующая страница"
+      lore:
+        - "&7Страница {current}/{max}"
+
+    previous-page:
+      name: "&c&lПредыдущая страница"
+      lore:
+        - "&7Страница {current}/{max}"
+
+    kit-item:
+      lore:
+        - ""
+        - "&7В очереди: &a{in_queue}"
+        - "&7Сражаются: &c{fighting}"
+        - ""
+        - "&eНажмите для входа в очередь!"
+
+    rounds-item:
+      name: "&6Раунды: &e{rounds}"
+      lore:
+        - ""
+        - "&7ЛКМ - увеличить"
+        - "&7ПКМ - уменьшить"
+        - ""
+        - "&7Мин: {min} | Макс: {max}"
+
+    win-condition-item:
+      name: "&bУсловие победы"
+      lore:
+        - ""
+        - "&7Текущее: &e{condition}"
+        - ""
+        - "&eЛучший из &7- Первый выигрывает"
+        - "&e  (раунды/2)+1"
+        - ""
+        - "&eСыграть все &7- Сыграть все раунды,"
+        - "&e  больше побед"
+        - ""
+        - "&eНажмите для переключения!"
+
+    send-request:
+      name: "&a&lОтправить запрос"
+      lore:
+        - ""
+        - "&7Набор: &b{kit}"
+        - "&7Арена: &d{arena}"
+        - "&7Раунды: &e{rounds}"
+        - "&7Условие: &6{condition}"
+        - ""
+        - "&eНажмите для отправки!"
+
+    offhand-slot:
+      name: "&e&lСлот левой руки"
+      lore:
+        - ""
+        - "&7Поместите предмет для левой руки"
+        - "&7сюда (Щит, Тотем и т.д.)"
+        - ""
+        - "&eПеретащите предметы сюда!"
+
+    save-kit:
+      name: "&a&lСохранить набор"
+      lore:
+        - "&7Сохранить компоновку набора"
+
+    reset-kit:
+      name: "&c&lСбросить набор"
+      lore:
+        - "&7Сбросить до стандартной компоновки"
+
+    ffa-arena-item:
+      lore:
+        - ""
+        - "&7Набор: &b{kit}"
+        - "&7Игроков: &e{players}"
+        - ""
+        - "&eНажмите для входа!"
+
+    duel-item:
+      name: "&e{player1} &7против &e{player2}"
+      lore:
+        - ""
+        - "&7Набор: &b{kit}"
+        - "&7Арена: &d{arena}"
+        - "&7Счёт: &a{score1} &7- &c{score2}"
+        - ""
+        - "&eНажмите для наблюдения!"
+
+    queue-menu:
+      name: "&b&lМеню Очереди"
+      lore:
+        - ""
+        - "&7Нажмите, чтобы открыть меню очереди"
+        - "&7и найти соперника!"
+        - ""
+        - "&eНажмите, чтобы открыть!"
+
+    party-menu:
+      name: "&d&lМеню Группы"
+      lore:
+        - ""
+        - "&7Создайте или управляйте группой"
+        - "&7Пригласите друзей и сражайтесь вместе!"
+        - ""
+        - "&eНажмите, чтобы открыть!"
+
+    kit-editor:
+      name: "&a&lРедактор Китов"
+      lore:
+        - ""
+        - "&7Настройте свои киты"
+        - "&7Расположите предметы по своему вкусу!"
+        - ""
+        - "&eНажмите, чтобы открыть!"
+
+    ffa-menu:
+      name: "&c&lАрены FFA"
+      lore:
+        - ""
+        - "&7Присоединитесь к арене Все против Всех"
+        - "&7Сражайтесь против всех!"
+        - ""
+        - "&eНажмите, чтобы открыть!"
+
+    settings-menu:
+      name: "&6&lНастройки"
+      lore:
+        - ""
+        - "&7Настройте свой опыт"
+        - "&7Переключайте различные опции!"
+        - ""
+        - "&eНажмите, чтобы открыть!"
+
+    spectate-menu:
+      name: "&3&lНаблюдение"
+      lore:
+        - ""
+        - "&7Смотрите текущие дуэли"
+        - "&7Учитесь у других игроков!"
+        - ""
+        - "&eНажмите, чтобы открыть!"
+
+    stats-menu:
+      name: "&9&lСтатистика"
+      lore:
+        - ""
+        - "&7Посмотрите свою статистику"
+        - "&7Убийства, Смерти, К/С и многое другое!"
+        - ""
+        - "&eНажмите, чтобы посмотреть!"
+
+    leave-lobby:
+      name: "&c&lПокинуть Лобби"
+      lore:
+        - ""
+        - "&7Вернуться на хаб-сервер"
+        - ""
+        - "&eНажмите, чтобы выйти!"
+
+# ==========================================
+# ОГРАНИЧЕНИЯ МИРОВ
+# ==========================================
+world-restriction:
+  blocked-world: "&cЭта функция недоступна в этом мире!"
+  command-blocked: "&cКоманды дуэлей отключены в этом мире!"
+  lobby-items-blocked: "&cПредметы лобби недоступны в этом мире!"
+  queue-blocked: "&cВы не можете войти в очередь из этого мира!"
+  duel-blocked: "&cВы не можете начать дуэль из этого мира!"
+  ffa-blocked: "&cFFA недоступна в этом мире!"
+  spectate-blocked: "&cНаблюдение недоступно из этого мира!"
+
+help:
+  header:
+    - "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    - "&e&lUltimate Duels &7- &fПомощь"
+    - "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+  player-commands:
+    - ""
+    - "&6Команды игрока:"
+    - "&e/duel <игрок> &7- Вызвать игрока на дуэль"
+    - "&e/duel accept <игрок> &7- Принять запрос на дуэль"
+    - "&e/duel deny <игрок> &7- Отклонить запрос на дуэль"
+    - "&e/queue <набор> &7- Войти в очередь набора"
+    - "&e/leavequeue &7- Покинуть очередь"
+    - "&e/party &7- Открыть меню группы"
+    - "&e/stats [игрок] &7- Просмотр статистики"
+    - "&e/spectate &7- Открыть меню наблюдения"
+    - "&e/settings &7- Открыть настройки"
+    - "&e/language &7- Сменить язык"
+
+  admin-commands:
+    - ""
+    - "&cКоманды администратора:"
+    - "&e/duels reload &7- Перезагрузить конфигурацию"
+    - "&e/duels kit create <название> &7- Создать набор"
+    - "&e/duels kit delete <название> &7- Удалить набор"
+    - "&e/duels kit save <название> &7- Сохранить набор из инвентаря"
+    - "&e/duels arena create <название> &7- Создать арену"
+    - "&e/duels arena delete <название> &7- Удалить арену"
+    - "&e/duels arena setspawn <название> <1/2> &7- Установить точку спавна"
+    - "&e/duels arena save <название> &7- Сохранить схему арены"
+    - "&e/duels setlobby &7- Установить спавн лобби"
+
+  footer:
+    - ""
+    - "&6&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+

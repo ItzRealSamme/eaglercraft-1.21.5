@@ -1,0 +1,47 @@
+layouts:
+  sword:
+    player-uuid: 4df1ec90-be0f-38db-8323-8a7809fc8069
+    kit-name: sword
+    last-modified: 1779538465589
+    inventory:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:diamond_sword
+        count: 1
+        components:
+          minecraft:enchantments: '{"minecraft:unbreaking":3}'
+        schema_version: 1
+    armor:
+      boots:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:diamond_boots
+        count: 1
+        components:
+          minecraft:enchantments: '{"minecraft:protection":3,"minecraft:unbreaking":3}'
+        schema_version: 1
+      leggings:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:diamond_leggings
+        count: 1
+        components:
+          minecraft:enchantments: '{"minecraft:protection":3,"minecraft:unbreaking":3}'
+        schema_version: 1
+      chestplate:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:diamond_chestplate
+        count: 1
+        components:
+          minecraft:enchantments: '{"minecraft:protection":4,"minecraft:unbreaking":3}'
+        schema_version: 1
+      helmet:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:diamond_helmet
+        count: 1
+        components:
+          minecraft:enchantments: '{"minecraft:protection":4,"minecraft:unbreaking":3}'
+        schema_version: 1

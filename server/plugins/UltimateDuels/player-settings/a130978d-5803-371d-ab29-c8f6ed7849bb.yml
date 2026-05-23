@@ -1,0 +1,9 @@
+scoreboard: true
+duel-requests: true
+party-invites: true
+death-messages: true
+spectator-notify: true
+sounds: true
+auto-requeue: false
+show-ping: true
+allow-spectators: true
