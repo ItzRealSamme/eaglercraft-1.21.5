@@ -1,0 +1,60 @@
+sort-order: 0
+enabled: true
+type: FREE_MODE
+identifier: mace
+display-name: Mace
+display-icon: MACE
+template:
+  teams:
+    '0':
+      positions:
+        '0':
+          x: -16.97991042765325
+          y: -24.0
+          z: -1.9992867236904885
+          yaw: -87.274605
+          pitch: -4.794496
+    '1':
+      positions:
+        '0':
+          x: 20.986908191198097
+          y: -24.0
+          z: -1.994395155934285
+          yaw: 90.108406
+          pitch: -0.59373677
+  extras: {}
+  universal-region:
+    minimum:
+      x: -25.0
+      y: -25.0
+      z: -19.0
+    maximum:
+      x: 26.0
+      y: 26.0
+      z: 18.0
+  battle-region:
+    minimum:
+      x: -25.0
+      y: -25.0
+      z: -19.0
+    maximum:
+      x: 26.0
+      y: 26.0
+      z: 18.0
+regeneration: false
+teleport-to-lobby: true
+allowed-modes:
+- mace
+team-colors:
+- RED
+- BLUE
+dont-edit:
+  assistance-stage: 4
+  blob-key: ef1ceec6709e40e088d771b59a087eb3
+arenas:
+  '0':
+    reference:
+      world: world
+      x: 122
+      y: 184
+      z: -847

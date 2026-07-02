@@ -62,7 +62,7 @@ chunks:
     snowball: -1
   fixed-chunk-inhabited-time: -1
   flush-regions-on-save: false
-  max-auto-save-chunks-per-tick: 24
+  max-auto-save-chunks-per-tick: 16
   prevent-moving-into-unloaded-chunks: false
 collisions:
   allow-player-cramming-damage: false
@@ -226,6 +226,34 @@ entities:
     monster: default
     other: default
     player: default
+entity-activation-range:
+  animals: 16
+  flying-monsters: 24
+  misc: 10
+  monsters: 24
+  raiders: 32
+  villagers: 16
+  wake-up-inactive:
+    animals-every: 1200
+    animals-for: 100
+    animals-max-per-tick: 4
+    flying-monsters-every: 200
+    flying-monsters-for: 100
+    flying-monsters-max-per-tick: 8
+    monsters-every: 400
+    monsters-for: 100
+    monsters-max-per-tick: 8
+    villagers-every: 600
+    villagers-for: 100
+    villagers-max-per-tick: 4
+  water: 10
+entity-tracking-range:
+  animals: 64
+  display: 64
+  misc: 32
+  monsters: 64
+  other: 32
+  players: 64
 environment:
   disable-explosion-knockback: false
   disable-ice-and-snow: false
@@ -241,7 +269,7 @@ environment:
   max-block-ticks: 65536
   max-fluid-ticks: 65536
   nether-ceiling-void-damage-height: disabled
-  optimize-explosions: false
+  optimize-explosions: true
   portal-create-radius: 16
   portal-search-radius: 128
   portal-search-vanilla-dimension-scaling: true
@@ -287,6 +315,7 @@ max-growth-height:
     min: 11
   cactus: 3
   reeds: 3
+max-tnt-per-tick: 20
 misc:
   allow-remote-ender-dragon-respawning: false
   alternate-current-update-order: HORIZONTAL_FIRST_OUTWARD

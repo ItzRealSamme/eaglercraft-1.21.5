@@ -1,0 +1,60 @@
+sort-order: 2
+enabled: true
+type: FREE_MODE
+identifier: smp
+display-name: SMP
+display-icon: NETHERITE_CHESTPLATE
+template:
+  teams:
+    '0':
+      positions:
+        '0':
+          x: 4.03713821743122
+          y: -42.0
+          z: -15.02359788952117
+          yaw: 0.5703125
+          pitch: -2.7397797
+    '1':
+      positions:
+        '0':
+          x: 3.98523248624997
+          y: -42.0
+          z: 26.96414637988721
+          yaw: 179.86517
+          pitch: -4.437713
+  extras: {}
+  universal-region:
+    minimum:
+      x: -29.0
+      y: -64.0
+      z: -44.0
+    maximum:
+      x: 30.0
+      y: 19.0
+      z: 44.0
+  battle-region:
+    minimum:
+      x: -29.0
+      y: -64.0
+      z: -44.0
+    maximum:
+      x: 30.0
+      y: 19.0
+      z: 44.0
+regeneration: true
+teleport-to-lobby: true
+allowed-modes:
+- smp
+team-colors:
+- RED
+- BLUE
+dont-edit:
+  assistance-stage: 4
+  blob-key: e93259455a034873a4904d83f7b13581
+arenas:
+  '0':
+    reference:
+      world: world
+      x: 685
+      y: 278
+      z: -922

@@ -1,0 +1,38 @@
+# Citizens NPC Storage
+last-created-npc-id: 6
+npc:
+  '6':
+    metadata:
+      cached-skin-uuid: ce4803b7-ddc0-4aa3-a31e-77ea2eac2cb0
+      protected: false
+      nameplate-visible: true
+      cached-skin-uuid-name: itzrealsilver
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      skintrait:
+        signature: jFDbv+x/r4IaTYLcJMDDdVwJvXnHQGzx7iyRym63wVTrmwZjgrGE22L05A38sbhKM3fec7ujrAxlbrqR22Wc6VUcSCzZLxTdQWUUYwCbCeE+Ooo7uThzQXduF5LxeBMHWgTKLAFli/qsUXsVJCLNKn7FtrTKexbqUrTt9I2DgLaDEugxLNZ1zrP5dhfXANzqc13GWE3KJ0DWqu2y5Z8hLBRop1Yq4eOcP2I9HMrhWqazlvzUb2tHNF/5ittLM2ZbFCFMy2yNR83JnQ2pOfgbzk4+RVL7NDFsHf9epZCKHQTZjjMjS1Aya4SxbE0e3NRoiGHHg8pAj03rwuigV6dDsPdMz7BTXApGIVQ1Qhsyddn+bigwUeNTogQs8Zhstk2OQsXz/FPzaHfbPEvHeZ7mQnT8ePq6262VgzgZRMmMxZBORAehPyMvo/coP8KNTLZyyaUToUgp5GSjSv1zS7T5X18elq7H0lIDYfxI9+Z8g75NBrcryLQF1Ht+R8TC/j52P1GZBrccDLXs46yfSp6FfgzuATl4uv86+53nNheo3kx86px514LwFNQgEMaxKHVT46XSCWTbguI75G5pA6/s2u/mSj1LAIiRy0WsxKmwOtqCEY/3AdfzhfYfn7TJR2p6m4nOXoQlrhH6hbLyk4ijzAurQKY79Ra2ZeN9WzcevKI=
+        skinName: ItzRealSilver
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTc4MjkxMjkyMTIwMCwKICAicHJvZmlsZUlkIiA6ICJjZTQ4MDNiN2RkYzA0YWEzYTMxZTc3ZWEyZWFjMmNiMCIsCiAgInByb2ZpbGVOYW1lIiA6ICJJdHpSZWFsU2lsdmVyIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzNlODM0OGZhN2IzOGE5ZWI3MTRlZTRiODk0YThjNGEzYjA0OTJmZWNhY2JjYTZjNTFmY2EyODljMzY1NDQ3MSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9LAogICAgIkNBUEUiIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzI4ZGU0YTgxNjg4YWQxOGI0OWU3MzVhMjczZTA4NmMxOGYxZTM5NjY5NTYxMjNjY2I1NzQwMzRjMDZmNWQzMzYiCiAgICB9CiAgfQp9
+      location:
+        world: world
+        worldid: 7cd930d3-c620-402f-b6c1-d8b57da18733
+        x: 176.7
+        y: 129.0
+        z: -410.3
+        bodyYaw: 132.5632
+        pitch: 0.0
+        yaw: 132.5632
+      type: PLAYER
+      inventory:
+      - amount: 1
+        meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABXQAAj09dAAJbWV0YS10eXBldAAIZW5jaGFudHN0AAlJdGVtRmxhZ3N0AAtVbmJyZWFrYWJsZXVxAH4ABgAAAAV0AAhJdGVtTWV0YXQABlNISUVMRHNxAH4AA3VxAH4ABgAAAAJ0ABFtaW5lY3JhZnQ6bWVuZGluZ3QAFG1pbmVjcmFmdDp1bmJyZWFraW5ndXEAfgAGAAAAAnNyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5nLk51bWJlcoaslR0LlOCLAgAAeHAAAAABc3EAfgAVAAAAA3NyABNqYXZhLnV0aWwuQXJyYXlMaXN0eIHSHZnHYZ0DAAFJAARzaXpleHAAAAACdwQAAAACdAANSElERV9FTkNIQU5UU3QAEEhJREVfVU5CUkVBS0FCTEV4c3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+        type: shield
+    traitnames: scoreboardtrait,spawned,skintrait,leashedtrait,location,type,inventory,chunktickettrait
+    name: ItzSammer
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 021586da-31a6-4dc5-b430-b7a019e40512

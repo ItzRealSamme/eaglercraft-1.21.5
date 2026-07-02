@@ -1,0 +1,15 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Syntaxsavy",
+      "uniqueId": "aa232e41-3abb-3d70-8075-301c7e809f31"
+    },
+    "time": 1779543154374,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/NzAFHgXJWs"
+    }
+  }
+]

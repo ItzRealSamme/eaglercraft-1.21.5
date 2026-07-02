@@ -25,3 +25,28 @@ Then go to ports, and set the visibilty of 25567 to public.
 ENJOY!
 
 Note the server is on the direct ip
+
+SAFE START/STOP/STATUS
+----------------------
+Use the included scripts instead of running servers manually.
+
+- Start all services: `./startup.sh`
+- Stop all services: `./stop.sh`
+- Check status: `./status.sh`
+
+If using systemd, copy `systemd/eaglercraft.service` to `/etc/systemd/system/` and enable it:
+
+```bash
+sudo cp systemd/eaglercraft.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable eaglercraft.service
+sudo systemctl start eaglercraft.service
+```
+
+Then manage with:
+
+```bash
+sudo systemctl status eaglercraft.service
+sudo systemctl stop eaglercraft.service
+sudo systemctl restart eaglercraft.service
+```

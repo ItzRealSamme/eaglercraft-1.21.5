@@ -1,0 +1,60 @@
+{
+  "stats": {
+    "minecraft:killed_by": {
+      "minecraft:player": 5
+    },
+    "minecraft:dropped": {
+      "minecraft:wind_charge": 1,
+      "minecraft:soul_lantern": 1,
+      "minecraft:diamond_sword": 1
+    },
+    "minecraft:mined": {
+      "minecraft:short_grass": 5
+    },
+    "minecraft:picked_up": {
+      "minecraft:wind_charge": 2,
+      "minecraft:diamond_sword": 1,
+      "minecraft:soul_lantern": 1,
+      "minecraft:wheat_seeds": 1
+    },
+    "minecraft:used": {
+      "minecraft:golden_apple": 22,
+      "minecraft:elytra": 2,
+      "minecraft:wind_charge": 105,
+      "minecraft:splash_potion": 8,
+      "minecraft:netherite_chestplate": 2,
+      "minecraft:netherite_sword": 30,
+      "minecraft:diamond_sword": 30,
+      "minecraft:ender_pearl": 5,
+      "minecraft:mace": 3,
+      "minecraft:firework_rocket": 10
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 1760,
+      "minecraft:walk_one_cm": 66978,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 12263,
+      "minecraft:damage_taken": 3467,
+      "minecraft:damage_dealt": 1526,
+      "minecraft:play_time": 27360,
+      "minecraft:damage_absorbed": 558,
+      "minecraft:jump": 481,
+      "minecraft:time_since_death": 1726,
+      "minecraft:damage_dealt_absorbed": 333,
+      "minecraft:aviate_one_cm": 35505,
+      "minecraft:drop": 3,
+      "minecraft:sprint_one_cm": 51546,
+      "minecraft:fall_one_cm": 82606,
+      "minecraft:swim_one_cm": 4930,
+      "minecraft:total_world_time": 27360,
+      "minecraft:fly_one_cm": 142501,
+      "minecraft:walk_on_water_one_cm": 2554,
+      "minecraft:crouch_one_cm": 478,
+      "minecraft:sneak_time": 344,
+      "minecraft:climb_one_cm": 634,
+      "minecraft:deaths": 6,
+      "minecraft:player_kills": 1
+    }
+  },
+  "DataVersion": 4671
+}

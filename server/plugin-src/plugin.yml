@@ -1,0 +1,10 @@
+name: PracticeMode
+main: com.eaglercraft.practice.PracticePlugin
+version: 1.0.0
+api-version: 1.21
+description: Simple Practice mode plugin (teleport and gamemode control).
+author: GitHub Copilot
+commands:
+  practice:
+    description: Teleport to practice and set creative or switch to survival.
+    usage: /practice [survival]

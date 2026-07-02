@@ -53,16 +53,16 @@ brandName:
 # Message sends when player joins to the server
 joinMessage:
   enable: true
-  text: '{"text": "&eWelcome to the Limbo!"}'
+  text: '{"text": "&eWelcome to the The Kingdom Of Duels!!"}'
 
 # BossBar displays when player joins to the server
 # For 1.9+ clients
 bossBar:
   enable: true
-  text: '{"text": "Welcome to the Limbo!"}'
+  text: '{"text": "Welcome to the The Kingdom Of Duels!!"}'
   health: 1.0
   # Available colors: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
-  color: PINK
+  color: RED
   # Available divisions: SOLID, DASHES_6, DASHES_10, DASHES_12, DASHES_20
   division: SOLID
 

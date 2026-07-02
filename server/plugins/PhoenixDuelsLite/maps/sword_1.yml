@@ -1,0 +1,66 @@
+sort-order: 3
+enabled: true
+type: FREE_MODE
+identifier: sword
+display-name: Sword
+display-icon: DIAMOND_SWORD
+template:
+  teams:
+    '0':
+      positions:
+        '0':
+          x: 12.980205856259744
+          y: -4.0
+          z: 0.02679266824611659
+          yaw: 90.39014
+          pitch: -3.3678231
+    '1':
+      positions:
+        '0':
+          x: -12.002577138015681
+          y: -4.0
+          z: 0.03602629506565336
+          yaw: -89.690544
+          pitch: 0.040340148
+  extras: {}
+  universal-region:
+    minimum:
+      x: -15.0
+      y: -5.0
+      z: -7.0
+    maximum:
+      x: 16.0
+      y: 5.0
+      z: 7.0
+  battle-region:
+    minimum:
+      x: -15.0
+      y: -5.0
+      z: -7.0
+    maximum:
+      x: 16.0
+      y: 5.0
+      z: 7.0
+  spectator-position:
+    x: 1.0336808975288818
+    y: -0.2469478287786444
+    z: -6.699755702648758
+    yaw: -0.2856982
+    pitch: 9.868532
+regeneration: false
+teleport-to-lobby: true
+allowed-modes:
+- sword
+team-colors:
+- RED
+- BLUE
+dont-edit:
+  assistance-stage: 4
+  blob-key: e89db5c67ac74518b436535e2becc839
+arenas:
+  '0':
+    reference:
+      world: world
+      x: 196
+      y: 153
+      z: -546

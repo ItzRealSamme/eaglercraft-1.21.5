@@ -1,0 +1,79 @@
+{
+  "stats": {
+    "minecraft:killed_by": {
+      "minecraft:player": 13
+    },
+    "minecraft:dropped": {
+      "minecraft:totem_of_undying": 1,
+      "minecraft:mace": 1,
+      "minecraft:golden_apple": 2,
+      "minecraft:netherite_axe": 1
+    },
+    "minecraft:mined": {
+      "minecraft:short_grass": 101,
+      "minecraft:tall_grass": 17,
+      "minecraft:acacia_leaves": 1,
+      "minecraft:tall_seagrass": 11,
+      "minecraft:seagrass": 19,
+      "minecraft:cobweb": 3,
+      "minecraft:acacia_planks": 24
+    },
+    "minecraft:picked_up": {
+      "minecraft:string": 12,
+      "minecraft:stick": 2,
+      "minecraft:totem_of_undying": 1,
+      "minecraft:acacia_log": 1,
+      "minecraft:firework_rocket": 128,
+      "minecraft:wheat_seeds": 18,
+      "minecraft:acacia_leaves": 1,
+      "minecraft:acacia_planks": 16,
+      "minecraft:golden_apple": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 18842,
+      "minecraft:leave_game": 10,
+      "minecraft:damage_taken": 25209,
+      "minecraft:damage_absorbed": 7542,
+      "minecraft:time_since_death": 18784,
+      "minecraft:aviate_one_cm": 1167796,
+      "minecraft:damage_dealt_absorbed": 1754,
+      "minecraft:total_world_time": 183769,
+      "minecraft:swim_one_cm": 26444,
+      "minecraft:crouch_one_cm": 2122,
+      "minecraft:climb_one_cm": 4604,
+      "minecraft:deaths": 17,
+      "minecraft:player_kills": 10,
+      "minecraft:damage_blocked_by_shield": 1850,
+      "minecraft:walk_one_cm": 506536,
+      "minecraft:walk_under_water_one_cm": 95508,
+      "minecraft:play_time": 183769,
+      "minecraft:damage_dealt": 9436,
+      "minecraft:jump": 3018,
+      "minecraft:drop": 5,
+      "minecraft:sprint_one_cm": 184506,
+      "minecraft:fall_one_cm": 270969,
+      "minecraft:fly_one_cm": 549312,
+      "minecraft:walk_on_water_one_cm": 49492,
+      "minecraft:sneak_time": 2877
+    },
+    "minecraft:used": {
+      "minecraft:wind_charge": 210,
+      "minecraft:shield": 5,
+      "minecraft:netherite_sword": 701,
+      "minecraft:cobweb": 74,
+      "minecraft:diamond_sword": 63,
+      "minecraft:netherite_axe": 39,
+      "minecraft:mace": 13,
+      "minecraft:firework_rocket": 143,
+      "minecraft:golden_apple": 206,
+      "minecraft:elytra": 97,
+      "minecraft:water_bucket": 6,
+      "minecraft:experience_bottle": 64,
+      "minecraft:bucket": 4,
+      "minecraft:splash_potion": 32,
+      "minecraft:netherite_chestplate": 95,
+      "minecraft:ender_pearl": 121
+    }
+  },
+  "DataVersion": 4671
+}

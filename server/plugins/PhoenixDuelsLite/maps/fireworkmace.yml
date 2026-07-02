@@ -1,0 +1,66 @@
+sort-order: 4
+enabled: true
+type: FREE_MODE
+identifier: fireworkmace
+display-name: FireworkMace
+display-icon: FIREWORK_ROCKET
+template:
+  teams:
+    '0':
+      positions:
+        '0':
+          x: 41.90918784038223
+          y: -54.0
+          z: -0.007530625115123257
+          yaw: 90.33502
+          pitch: 89.79332
+    '1':
+      positions:
+        '0':
+          x: -40.96761378574331
+          y: -54.0
+          z: 0.0033657105400379805
+          yaw: -89.166626
+          pitch: 88.93715
+  extras: {}
+  universal-region:
+    minimum:
+      x: -50.0
+      y: -55.0
+      z: -26.0
+    maximum:
+      x: 50.0
+      y: 55.0
+      z: 26.0
+  battle-region:
+    minimum:
+      x: -50.0
+      y: -55.0
+      z: -26.0
+    maximum:
+      x: 50.0
+      y: 55.0
+      z: 26.0
+  spectator-position:
+    x: -0.7573969728194356
+    y: -43.0
+    z: 0.769364960961866
+    yaw: -179.72461
+    pitch: 90.0
+regeneration: false
+teleport-to-lobby: true
+allowed-modes:
+- fireworkmace
+team-colors:
+- RED
+- BLUE
+dont-edit:
+  assistance-stage: 4
+  blob-key: 9ccd1ed4b5ca4ec69a1548861ab92992
+arenas:
+  '0':
+    reference:
+      world: world
+      x: 418
+      y: 247
+      z: -1139

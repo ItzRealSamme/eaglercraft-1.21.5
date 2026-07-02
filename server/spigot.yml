@@ -18,8 +18,8 @@ messages:
   outdated-server: Outdated server! I'm still on {0}
   restart: Server is restarting
 settings:
-  bungeecord: false
-  save-user-cache-on-stop-only: false
+  bungeecord: true
+  save-user-cache-on-stop-only: true
   sample-count: 12
   player-shuffle: 0
   user-cache-size: 1000

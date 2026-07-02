@@ -1,0 +1,32 @@
+_NEZNAMY_:
+  tabprefix: '&6&lTAB&r &a'
+  tagprefix: '&6&lTAB&r &a'
+237d8b55-3f97-4749-aa60-e9fe97b45062:
+  tabsuffix: ' &b&lVerified'
+a130978d-5803-371d-ab29-c8f6ed7849bb:
+  tabprefix: '&0&l[&c&lOWNER&0&l] &c'
+  tagprefix: '&cOwner &7'
+1761bae3-efb9-3a39-b93a-4b2fed96d855:
+  tabprefix: '&0&l[&a&lHELPER&0&l] &a'
+  tagprefix: '&aHelper &7'
+aa232e41-3abb-3d70-8075-301c7e809f31:
+  tabprefix: '&0&l[&a&lHELPER&0&l] &a'
+  tagprefix: '&aHelper &7'
+4df1ec90-be0f-38db-8323-8a7809fc8069:
+  tabprefix: '&0&l[&7&lMEMBER&0&l] &7'
+  tagprefix: '&7Member &7'
+ItzSilverStone:
+  tabprefix: '&0&l[&a&lHELPER&0&l] &a'
+  tagprefix: '&aHelper &7'
+  customtabname: ItzSilverstone
+Techno_the_goat:
+  tabprefix: '&0&l[&7&lMEMBER&0&l] &7'
+a38e599c-4bd0-3f28-b655-75431d8115c7:
+  tabprefix: '&0&l[&7&lMEMBER&0&l] &7'
+  tagprefix: '&7Member &7'
+2dde329b-7ccb-3316-b0f7-9aaebf9fc51f:
+  tabprefix: '&0&l[&7&lMEMBER&0&l] &7'
+  tagprefix: '&7Member &7'
+976f3612-e230-3e3e-8654-e0f7e10140ca:
+  tabprefix: '&0&l[&7&lMEMBER&0&l] &7'
+  tagprefix: '&7Member &7'
