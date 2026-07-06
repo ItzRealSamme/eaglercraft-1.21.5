@@ -1,349 +1,209 @@
-[12:47:55] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.2+10-LTS; Microsoft Microsoft-13053558) on Linux 6.8.0-1044-azure (amd64)
-[12:47:55] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-116-main@6f71be8 (2026-02-15T19:11:22Z) for Minecraft 1.21.11
-[12:47:56] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[12:47:59] [ServerMain/INFO]: [PluginInitializerManager] Initialized 6 plugins
-[12:47:59] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (6):
- - SkinsRestorer (15.12.0), UltimateDuels (1.0.0), ViaBackwards (5.9.1), ViaRewind (4.0.7), ViaVersion (5.9.1), WorldEdit (7.4.3+7515-78babeb)
-[12:48:08] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[12:48:12] [ServerMain/INFO]: Loaded 1470 recipes
-[12:48:12] [ServerMain/INFO]: Loaded 1584 advancements
-[12:48:12] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
-[12:48:13] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 1,205.3ms
-[12:48:13] [Server thread/INFO]: Starting minecraft server version 1.21.11
-[12:48:13] [Server thread/INFO]: Loading properties
-[12:48:13] [Server thread/INFO]: This server is running Paper version 1.21.11-116-main@6f71be8 (2026-02-15T19:11:22Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
-[12:48:14] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[12:48:14] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[12:48:14] [Server thread/INFO]: Using 4 threads for Netty based IO
-[12:48:16] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
-[12:48:17] [Server thread/INFO]: Default game type: SURVIVAL
-[12:48:17] [Server thread/INFO]: Generating keypair
-[12:48:17] [Server thread/INFO]: Starting Minecraft server on *:25565
-[12:48:17] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[12:48:17] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
-[12:48:18] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.9.1
-[12:48:18] [Server thread/INFO]: [ViaVersion] ViaVersion 5.9.1 is now loaded. Registering protocol transformers and injecting...
-[12:48:19] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading block connection mappings ...
-[12:48:20] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[12:48:20] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[12:48:22] [Server thread/INFO]: [ViaRewind] Registering protocols...
-[12:48:22] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.9.1
-[12:48:22] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.4.3+7515-78babeb
-[12:48:22] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_8To1_7_6_10
-java.util.concurrent.CompletionException: java.lang.NoClassDefFoundError: com/viaversion/viaversion/api/type/types/version/Types1_8
-	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1828) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
-Caused by: java.lang.NoClassDefFoundError: com/viaversion/viaversion/api/type/types/version/Types1_8
-	at ViaRewind-4.0.7.jar//com.viaversion.viarewind.protocol.v1_8to1_7_6_10.rewriter.EntityPacketRewriter1_8$2.register(EntityPacketRewriter1_8.java:111) ~[?:?]
-	at ViaVersion-5.9.1.jar//com.viaversion.viaversion.api.protocol.remapper.PacketHandlers.<init>(PacketHandlers.java:38) ~[?:?]
-	at ViaRewind-4.0.7.jar//com.viaversion.viarewind.protocol.v1_8to1_7_6_10.rewriter.EntityPacketRewriter1_8$2.<init>(EntityPacketRewriter1_8.java:107) ~[?:?]
-	at ViaRewind-4.0.7.jar//com.viaversion.viarewind.protocol.v1_8to1_7_6_10.rewriter.EntityPacketRewriter1_8.registerPackets(EntityPacketRewriter1_8.java:107) ~[?:?]
-	at ViaVersion-5.9.1.jar//com.viaversion.viaversion.api.rewriter.RewriterBase.register(RewriterBase.java:36) ~[?:?]
-	at ViaRewind-4.0.7.jar//com.viaversion.viarewind.protocol.v1_8to1_7_6_10.Protocol1_8To1_7_6_10.registerPackets(Protocol1_8To1_7_6_10.java:62) ~[?:?]
-	at ViaVersion-5.9.1.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.initialize(AbstractProtocol.java:117) ~[?:?]
-	at ViaVersion-5.9.1.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:214) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825) ~[?:?]
-	... 5 more
-Caused by: java.lang.ClassNotFoundException: com.viaversion.viaversion.api.type.types.version.Types1_8
-	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:208) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:175) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[?:?]
-	... 14 more
-[12:48:22] [Via-Mappingloader-2/ERROR]: [ViaVersion] Error during loading of Protocol1_9To1_8
-java.util.concurrent.CompletionException: java.lang.NoClassDefFoundError: com/viaversion/viaversion/api/type/types/version/Types1_9
-	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1828) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
-Caused by: java.lang.NoClassDefFoundError: com/viaversion/viaversion/api/type/types/version/Types1_9
-	at ViaRewind-4.0.7.jar//com.viaversion.viarewind.protocol.v1_9to1_8.rewriter.EntityPacketRewriter1_9$4.register(EntityPacketRewriter1_9.java:196) ~[?:?]
-	at ViaVersion-5.9.1.jar//com.viaversion.viaversion.api.protocol.remapper.PacketHandlers.<init>(PacketHandlers.java:38) ~[?:?]
-	at ViaRewind-4.0.7.jar//com.viaversion.viarewind.protocol.v1_9to1_8.rewriter.EntityPacketRewriter1_9$4.<init>(EntityPacketRewriter1_9.java:181) ~[?:?]
-	at ViaRewind-4.0.7.jar//com.viaversion.viarewind.protocol.v1_9to1_8.rewriter.EntityPacketRewriter1_9.registerPackets(EntityPacketRewriter1_9.java:181) ~[?:?]
-	at ViaVersion-5.9.1.jar//com.viaversion.viaversion.api.rewriter.RewriterBase.register(RewriterBase.java:36) ~[?:?]
-	at ViaRewind-4.0.7.jar//com.viaversion.viarewind.protocol.v1_9to1_8.Protocol1_9To1_8.registerPackets(Protocol1_9To1_8.java:67) ~[?:?]
-	at ViaVersion-5.9.1.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.initialize(AbstractProtocol.java:117) ~[?:?]
-	at ViaVersion-5.9.1.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:214) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825) ~[?:?]
-	... 5 more
-Caused by: java.lang.ClassNotFoundException: com.viaversion.viaversion.api.type.types.version.Types1_9
-	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:208) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:175) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[?:?]
-	... 14 more
-[12:48:23] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@4e2aa954]
-[12:48:23] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.12.0
-[12:48:23] [Server thread/INFO]: [UltimateDuels] Loading server plugin UltimateDuels v1.0.0
-[12:48:23] [Server thread/INFO]: [UltimateDuels] UltimateDuels is loading...
-[12:48:23] [Server thread/INFO]: [ViaRewind] Loading server plugin ViaRewind v4.0.7
-[12:48:23] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[12:48:23] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.4.3+7515-78babeb
-[12:48:23] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[12:48:23] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[12:48:24] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_21_11.PaperweightAdapter as the Bukkit adapter
-[12:48:24] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.12.0
-[12:48:26] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.21.11.
-[12:48:28] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
-[12:48:28] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.7
-[12:48:28] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[12:48:28] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[12:48:28] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[12:48:28] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[12:48:28] [Server thread/INFO]: Preparing level "world"
-[12:48:28] [Server thread/INFO]: [ca.spottedleaf.moonrise.common.util.MoonriseConstants] NUMA enable flag is not set; however there is NUMA interaction support for this OS.
-[12:48:28] [Server thread/INFO]: [ca.spottedleaf.moonrise.common.util.MoonriseConstants] Detected 1 NUMA nodes.
-[12:48:28] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[12:48:28] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[12:48:28] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
-[12:48:28] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
-[12:48:28] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
-[12:48:28] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[12:48:28] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[12:48:28] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.12.0
-[12:48:28] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 2903414
-[12:48:28] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
-[12:48:28] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[12:48:28] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
-[12:48:28] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer or receive priority support? Become a supporter: https://skinsrestorer.net/pricing
-[12:48:29] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
-[12:48:29] [Server thread/INFO]: Prepared spawn area in 1 ms
-[12:48:29] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
-[12:48:29] [Server thread/INFO]: Prepared spawn area in 0 ms
-[12:48:29] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
-[12:48:29] [Server thread/INFO]: Prepared spawn area in 2 ms
-[12:48:29] [Server thread/INFO]: Done preparing level "world" (1.298s)
-[12:48:29] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.9.1
-[12:48:29] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21.11 (774)
-[12:48:29] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.9.1
-[12:48:29] [Server thread/INFO]: [UltimateDuels] Enabling UltimateDuels v1.0.0
-[12:48:29] [Server thread/INFO]: [UltimateDuels] 
-[12:48:29] [Server thread/INFO]: [UltimateDuels] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[12:48:29] [Server thread/INFO]: [UltimateDuels]   UltimateDuels
-[12:48:29] [Server thread/INFO]: [UltimateDuels]   Version: 1.0.0
-[12:48:29] [Server thread/INFO]: [UltimateDuels]   Multi-Language System: ✓ Enabled
-[12:48:29] [Server thread/INFO]: [UltimateDuels]   World Restrictions: ✓ Enabled
-[12:48:29] [Server thread/INFO]: [UltimateDuels] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[12:48:29] [Server thread/INFO]: [UltimateDuels] 
-[12:48:29] [Server thread/INFO]: [UltimateDuels] Loading configuration files...
-[12:48:29] [Server thread/INFO]: [UltimateDuels] Configuration loaded successfully!
-[12:48:29] [Server thread/INFO]: [UltimateDuels] Configuration file loaded successfully!
-[12:48:29] [Server thread/INFO]: [UltimateDuels] Initializing language system...
-[12:48:30] [Server thread/INFO]: [UltimateDuels] LanguageManager initialized with 6 languages
-[12:48:30] [Server thread/INFO]: [UltimateDuels] Default language: en
-[12:48:30] [Server thread/INFO]: [UltimateDuels] Language system initialized successfully!
-[12:48:30] [Server thread/INFO]: [UltimateDuels]   ✓ 6 languages loaded
-[12:48:30] [Server thread/INFO]: [UltimateDuels]   ✓ Default language: en
-[12:48:30] [Server thread/INFO]: [UltimateDuels]     - Deutsch (de) - 350 messages
-[12:48:30] [Server thread/INFO]: [UltimateDuels]     - Русский (ru) - 350 messages
-[12:48:30] [Server thread/INFO]: [UltimateDuels]     - Português (pt) - 350 messages
-[12:48:30] [Server thread/INFO]: [UltimateDuels]     - English (en) - 352 messages
-[12:48:30] [Server thread/INFO]: [UltimateDuels]     - Français (fr) - 350 messages
-[12:48:30] [Server thread/INFO]: [UltimateDuels]     - Español (es) - 350 messages
-[12:48:30] [Server thread/INFO]: [UltimateDuels]   ✓ MessageUtils initialized
-[12:48:30] [Server thread/INFO]: [UltimateDuels] === GUIMessages Debug ===
-[12:48:30] [Server thread/INFO]: [UltimateDuels] guisConfig loaded: true
-[12:48:30] [Server thread/INFO]: [UltimateDuels] ffa-selector.texts exists: true
-[12:48:30] [Server thread/INFO]: [UltimateDuels] ffa-selector.texts keys: [title, info-title, total-in-ffa, available-arenas, join-line1, join-line2, death-sends-lobby, no-arenas-title, no-arenas-line1, no-arenas-line2, arena-kit-label, arena-players-label, arena-full, click-to-join, leave-ffa-title, current-arena-label, current-kit-label, your-stats-label, kills-stat, deaths-stat, streak-stat, click-to-leave]
-[12:48:30] [Server thread/INFO]: [UltimateDuels] Sample value (title): &c&lFFA Arenas
-[12:48:30] [Server thread/INFO]: [UltimateDuels] =========================
-[12:48:30] [Server thread/INFO]: [UltimateDuels]   ✓ GUIMessages initialized
-[12:48:30] [Server thread/INFO]: [UltimateDuels] Initializing world restriction system...
-[12:48:30] [Server thread/INFO]: [UltimateDuels] [WorldRestrictionManager] Mode: DISABLED | Blacklisted worlds: 6
-[12:48:30] [Server thread/INFO]: [UltimateDuels] [WorldRestrictionManager] Blacklisted: survival, minigames, skyblock, prison, creative, factions
-[12:48:30] [Server thread/INFO]: [UltimateDuels] [WorldRestrictionManager] Initialized - Mode: DISABLED
-[12:48:30] [Server thread/INFO]: [UltimateDuels] World restriction system initialized successfully!
-[12:48:30] [Server thread/INFO]: [UltimateDuels]   ✓ Mode: DISABLED
-[12:48:30] [Server thread/INFO]: [UltimateDuels] Initializing database...
-[12:48:30] [Server thread/INFO]: [UltimateDuels] §a[TaskScheduler] Initialized successfully!
-[12:48:30] [Server thread/INFO]: [UltimateDuels]   ✓ TaskScheduler pre-initialized for database
-[12:48:30] [Server thread/INFO]: [UltimateDuels] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[12:48:30] [Server thread/INFO]: [UltimateDuels]   Initializing Database System
-[12:48:30] [Server thread/INFO]: [UltimateDuels] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[12:48:30] [Server thread/INFO]: [UltimateDuels]   Database Type: MySQL
-[12:48:30] [Server thread/INFO]: [UltimateDuels]   Table Prefix: ud_
-[12:48:30] [Server thread/INFO]: [UltimateDuels] Initializing MySQL connection pool...
-[12:48:30] [Server thread/INFO]: [com.ultimateduels.libs.hikari.HikariDataSource] UltimateDuels-MySQL-Pool - Starting...
-[12:48:31] [Server thread/ERROR]: [UltimateDuels] Failed to initialize MySQL connection pool
-com.ultimateduels.libs.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Communications link failure
-	at UltimateDuels-6.1.0 (2).jar//com.ultimateduels.libs.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584) ~[?:?]
-	at UltimateDuels-6.1.0 (2).jar//com.ultimateduels.libs.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571) ~[?:?]
-	at UltimateDuels-6.1.0 (2).jar//com.ultimateduels.libs.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[?:?]
-	at UltimateDuels-6.1.0 (2).jar//com.ultimateduels.libs.hikari.HikariDataSource.<init>(HikariDataSource.java:80) ~[?:?]
-	at UltimateDuels-6.1.0 (2).jar//com.ultimateduels.database.ConnectionPoolManager.initializeMySQL(ConnectionPoolManager.java:222) ~[?:?]
-	at UltimateDuels-6.1.0 (2).jar//com.ultimateduels.database.ConnectionPoolManager.initialize(ConnectionPoolManager.java:129) ~[?:?]
-	at UltimateDuels-6.1.0 (2).jar//com.ultimateduels.database.DatabaseManager.initialize(DatabaseManager.java:130) ~[?:?]
-	at UltimateDuels-6.1.0 (2).jar//com.ultimateduels.UltimateDuels.initializeDatabase(UltimateDuels.java:539) ~[?:?]
-	at UltimateDuels-6.1.0 (2).jar//com.ultimateduels.UltimateDuels.onEnable(UltimateDuels.java:186) ~[?:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:279) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:207) ~[paper-1.21.11.jar:1.21.11-116-6f71be8]
-	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.11.jar:1.21.11-116-6f71be8]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:639) ~[paper-1.21.11.jar:1.21.11-116-6f71be8]
-	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:596) ~[paper-1.21.11.jar:1.21.11-116-6f71be8]
-	at net.minecraft.server.MinecraftServer.initPostWorld(MinecraftServer.java:636) ~[paper-1.21.11.jar:1.21.11-116-6f71be8]
-	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:365) ~[paper-1.21.11.jar:1.21.11-116-6f71be8]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1253) ~[paper-1.21.11.jar:1.21.11-116-6f71be8]
-	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:388) ~[paper-1.21.11.jar:1.21.11-116-6f71be8]
-	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at UltimateDuels-6.1.0 (2).jar//com.ultimateduels.libs.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[?:?]
-	at UltimateDuels-6.1.0 (2).jar//com.ultimateduels.libs.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[?:?]
-	at UltimateDuels-6.1.0 (2).jar//com.ultimateduels.libs.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[?:?]
-	at UltimateDuels-6.1.0 (2).jar//com.ultimateduels.libs.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[?:?]
-	at UltimateDuels-6.1.0 (2).jar//com.ultimateduels.libs.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[?:?]
-	... 18 more
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:142) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:961) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	... 26 more
-Caused by: java.net.ConnectException: Connection refused
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639) ~[?:?]
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:543) ~[?:?]
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[?:?]
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284) ~[?:?]
-	at java.base/java.net.Socket.connect(Socket.java:659) ~[?:?]
-	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	... 29 more
-[12:48:31] [Server thread/WARN]: [UltimateDuels] MySQL initialization failed, falling back to SQLite
-[12:48:31] [Server thread/INFO]: [UltimateDuels] Database file path: /workspaces/eaglercraft-1.21.5/server/plugins/UltimateDuels/data/ultimateduels.db
-[12:48:31] [Server thread/INFO]: [UltimateDuels] Database directory exists: true
-[12:48:31] [Server thread/INFO]: [UltimateDuels] Database directory writable: true
-[12:48:31] [Server thread/INFO]: [com.ultimateduels.libs.hikari.HikariDataSource] UltimateDuels-SQLite-Pool - Starting...
-[12:48:31] [Server thread/INFO]: [com.ultimateduels.libs.hikari.pool.HikariPool] UltimateDuels-SQLite-Pool - Added connection org.sqlite.jdbc4.JDBC4Connection@6325dee6
-[12:48:31] [Server thread/INFO]: [com.ultimateduels.libs.hikari.HikariDataSource] UltimateDuels-SQLite-Pool - Start completed.
-[12:48:31] [Server thread/INFO]: [UltimateDuels] Successfully connected to SQLite database!
-[12:48:31] [Server thread/INFO]: [UltimateDuels]   File: /workspaces/eaglercraft-1.21.5/server/plugins/UltimateDuels/data/ultimateduels.db
-[12:48:31] [Server thread/INFO]: [UltimateDuels]   File exists: true
-[12:48:31] [Server thread/INFO]: [UltimateDuels]   ✓ Connection pool initialized
-[12:48:31] [Server thread/INFO]: [UltimateDuels]   ✓ Created 5 SQL tables
-[12:48:31] [Server thread/INFO]: [UltimateDuels]   ✓ Database schema created
-[12:48:31] [Server thread/INFO]: [UltimateDuels]   ✓ Data Access Objects initialized
-[12:48:31] [Server thread/INFO]: [UltimateDuels] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[12:48:31] [Server thread/INFO]: [UltimateDuels]   Database System Ready!
-[12:48:31] [Server thread/INFO]: [UltimateDuels] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[12:48:31] [Server thread/INFO]: [UltimateDuels] Database initialized successfully!
-[12:48:31] [Server thread/INFO]: [UltimateDuels] Initializing hooks...
-[12:48:31] [Server thread/INFO]: [UltimateDuels] ✓ WorldEdit hooked successfully!
-[12:48:31] [Server thread/INFO]: [UltimateDuels] ○ FastAsyncWorldEdit not found. Using WorldEdit if available.
-[12:48:31] [Server thread/INFO]: [UltimateDuels] ○ PlaceholderAPI not found. Placeholders will be disabled.
-[12:48:31] [Server thread/INFO]: [UltimateDuels] Initializing managers...
-[12:48:31] [Server thread/INFO]: [UltimateDuels]   ✓ PlayerStateManager initialized
-[12:48:31] [Server thread/INFO]: [UltimateDuels] §a[PlayerDataManager] Initialized successfully with auto-save!
-[12:48:31] [Server thread/INFO]: [UltimateDuels]   ✓ PlayerDataManager initialized
-[12:48:31] [Server thread/INFO]: [UltimateDuels] §a[CooldownManager] Initialized successfully!
-[12:48:31] [Server thread/INFO]: [UltimateDuels]   ✓ CooldownManager initialized
-[12:48:31] [Server thread/INFO]: [UltimateDuels] [KitManager] Storage initialized. Layouts folder: /workspaces/eaglercraft-1.21.5/server/plugins/UltimateDuels/player-layouts
-[12:48:31] [Server thread/INFO]: [UltimateDuels] [KitManager] Loaded 8 admin kits
-[12:48:31] [Server thread/INFO]: [UltimateDuels]   ✓ KitManager initialized
-[12:48:31] [Server thread/INFO]: [UltimateDuels] §a[SchematicManager] Initialized successfully!
-[12:48:31] [Server thread/INFO]: [UltimateDuels]   ✓ SchematicManager initialized
-[12:48:31] [Server thread/INFO]: [UltimateDuels] §e[WorldEditHook] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[12:48:31] [Server thread/INFO]: [UltimateDuels] §e[WorldEditHook] WorldEdit v7.4.3+7515-78babeb detected
-[12:48:31] [Server thread/INFO]: [UltimateDuels] §e[WorldEditHook] Using synchronous operations (may cause lag)
-[12:48:31] [Server thread/INFO]: [UltimateDuels] §e[WorldEditHook] §7TIP: Install FastAsyncWorldEdit for better performance!
-[12:48:31] [Server thread/INFO]: [UltimateDuels] §e[WorldEditHook] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[12:48:32] [Server thread/INFO]: [UltimateDuels] [WorldEditHook] Using schematic format: SPONGE_V3_SCHEMATIC
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ WorldEditHook initialized successfully
-[12:48:32] [Server thread/INFO]: [UltimateDuels] §e[ArenaManager] Loading 0 FFA spawn points for arena: duel_1v1
-[12:48:32] [Server thread/INFO]: [UltimateDuels] §a[ArenaManager] Successfully loaded 0/0 FFA spawn points for arena: duel_1v1
-[12:48:32] [Server thread/INFO]: [UltimateDuels] §e[ArenaManager] Loading 0 FFA spawn points for arena: voidsentclone
-[12:48:32] [Server thread/INFO]: [UltimateDuels] §a[ArenaManager] Successfully loaded 0/0 FFA spawn points for arena: voidsentclone
-[12:48:32] [Server thread/INFO]: [UltimateDuels] §7[ArenaManager] No FFA arenas found in internal storage or ffa-arenas.yml
-[12:48:32] [Server thread/INFO]: [UltimateDuels] §a[ArenaManager] Loaded 2 duel arenas and 0 FFA arenas
-[12:48:32] [Server thread/INFO]: [UltimateDuels] §a[ArenaManager] Initialized with 2 duel arenas and 0 FFA arenas
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ ArenaManager initialized
-[12:48:32] [Server thread/INFO]: [UltimateDuels] [StatsManager] Initialized successfully!
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ StatsManager initialized
-[12:48:32] [Server thread/INFO]: [UltimateDuels] [SettingsManager] Initialized successfully!
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ SettingsManager initialized
-[12:48:32] [Server thread/INFO]: [UltimateDuels] §a[LobbyManager] Loaded 7 hotbar items from config
-[12:48:32] [Server thread/INFO]: [UltimateDuels] §a[LobbyManager] Initialized successfully!
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ LobbyManager initialized
-[12:48:32] [Server thread/INFO]: [UltimateDuels] §a[PartyManager] Initialized successfully!
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ PartyManager initialized
-[12:48:32] [Server thread/INFO]: [UltimateDuels] §a[QueueManager] Match task started (interval: 20 ticks)
-[12:48:32] [Server thread/INFO]: [UltimateDuels] §a[QueueManager] Initialized with 8 kit queues
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ QueueManager initialized
-[12:48:32] [Server thread/INFO]: [UltimateDuels] §a[DuelManager] Initialized successfully!
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ DuelManager initialized
-[12:48:32] [Server thread/INFO]: [UltimateDuels] [FFAManager] Settings loaded - Respawn: Lobby | Kill Rewards: true | Heal: true | Rekit: true
-[12:48:32] [Server thread/INFO]: [UltimateDuels] [FFAManager] Initialized with 0 FFA arenas
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ FFAManager initialized
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ ScoreboardManager initialized
-[12:48:32] [Server thread/INFO]: [UltimateDuels] HealthDisplayManager initialized with type: TEXT_DISPLAY
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   Show in Duels: true
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   Show in FFA: true
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   Show to Spectators: true
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ HealthDisplayManager initialized
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ GUIManager initialized
-[12:48:32] [Server thread/INFO]: [UltimateDuels] === GUIConfigManager Debug ===
-[12:48:32] [Server thread/INFO]: [UltimateDuels] guis.yml loaded. Checking texts sections...
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ffa-selector.texts: ✓ FOUND
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   queue-main.texts: ✓ FOUND
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   settings.texts: ✓ FOUND
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   stats.texts: ✓ FOUND
-[12:48:32] [Server thread/INFO]: [UltimateDuels] All texts sections loaded successfully!
-[12:48:32] [Server thread/INFO]: [UltimateDuels] ==============================
-[12:48:32] [Server thread/INFO]: [UltimateDuels] GUI configuration loaded successfully!
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ GUIConfigManager initialized
-[12:48:32] [Server thread/INFO]: [UltimateDuels] All managers initialized successfully!
-[12:48:32] [Server thread/INFO]: [UltimateDuels] Registering commands...
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ FFAAdminCommand registered
-[12:48:32] [Server thread/WARN]: [UltimateDuels] Command 'toggleduels' not found in plugin.yml!
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ LanguageCommand registered
-[12:48:32] [Server thread/INFO]: [UltimateDuels] All commands registered successfully!
-[12:48:32] [Server thread/INFO]: [UltimateDuels] Registering listeners...
-[12:48:32] [Server thread/INFO]: [UltimateDuels] All listeners registered successfully!
-[12:48:32] [Server thread/INFO]: [UltimateDuels] Starting scheduled tasks...
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ QueueMatchTask started
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ ScoreboardUpdateTask started
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ AutoSaveTask started
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ CooldownCleanupTask started
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ Party cleanup task started
-[12:48:32] [Server thread/INFO]: [UltimateDuels]   ✓ Arena cleanup task started
-[12:48:32] [Server thread/INFO]: [UltimateDuels] All scheduled tasks started successfully!
-[12:48:32] [Server thread/INFO]: [UltimateDuels] Initializing API...
-[12:48:32] [Server thread/INFO]: [UltimateDuels] API initialized successfully!
-[12:48:32] [Server thread/INFO]: [UltimateDuels] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[12:48:32] [Server thread/INFO]: [UltimateDuels] UltimateDuels v1.0.0 enabled successfully!
-[12:48:32] [Server thread/INFO]: [UltimateDuels] Load time: 3250ms
-[12:48:32] [Server thread/INFO]: [UltimateDuels] Languages loaded: 6
-[12:48:32] [Server thread/INFO]: [UltimateDuels] Default language: en
-[12:48:32] [Server thread/INFO]: [UltimateDuels] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[12:48:33] [Server thread/INFO]: [spark] Starting background profiler...
-[12:48:34] [Server thread/INFO]: Running delayed init tasks
-[12:48:34] [Server thread/INFO]: Done (41.482s)! For help, type "help"
-[12:48:34] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[12:48:34] [Paper Async Task Handler Thread - 1/WARN]: *** You are running an outdated version of Minecraft, which is 2 release(s) and 16 build(s) behind!
-[12:48:34] [Paper Async Task Handler Thread - 1/WARN]: *** Please update to the latest stable version on https://papermc.io/downloads/paper ***
-[12:48:36] [Server thread/WARN]: [UltimateDuels] [UltimateDuels] ffa_world is NOT loaded! FFA arenas will have no spawn points. Make sure ffa_world is in your server's world list.
-[12:53:34] [Craft Scheduler Thread - 17 - UltimateDuels/INFO]: [UltimateDuels] §a[ArenaManager] Saved 0 FFA arenas to disk
+[12:02:58] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.3+9-LTS; Microsoft Microsoft-13877136) on Linux 6.8.0-1052-azure (amd64)
+[12:02:58] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-116-main@6f71be8 (2026-02-15T19:11:22Z) for Minecraft 1.21.11
+[12:02:59] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[12:03:04] [ServerMain/INFO]: [PluginInitializerManager] Initialized 8 plugins
+[12:03:04] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (8):
+ - Citizens (2.0.43-SNAPSHOT (build 4207)), CrystalBot (1.0.2), PhoenixDuelsLite (3.0.7), SkinsRestorer (15.12.4), TAB (6.0.2), ViaBackwards (5.9.1), ViaVersion (5.9.1), WorldEdit (7.4.1+76eaf25bd)
+[12:03:24] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[12:03:29] [ServerMain/INFO]: Loaded 1470 recipes
+[12:03:29] [ServerMain/INFO]: Loaded 1584 advancements
+[12:03:29] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[12:03:30] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 590.0ms
+[12:03:30] [Server thread/INFO]: Starting minecraft server version 1.21.11
+[12:03:30] [Server thread/INFO]: Loading properties
+[12:03:30] [Server thread/INFO]: This server is running Paper version 1.21.11-116-main@6f71be8 (2026-02-15T19:11:22Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[12:03:30] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[12:03:30] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[12:03:30] [Server thread/INFO]: Using 4 threads for Netty based IO
+[12:03:32] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[12:03:33] [Server thread/INFO]: Default game type: SURVIVAL
+[12:03:33] [Server thread/INFO]: Generating keypair
+[12:03:33] [Server thread/INFO]: Starting Minecraft server on *:25565
+[12:03:33] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[12:03:33] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[12:03:35] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loading 4 libraries... please wait
+[12:03:35] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library /workspaces/eaglercraft-1.21.5/server/libraries/ch/ethz/globis/phtree/phtree/2.8.2/phtree-2.8.2.jar
+[12:03:35] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library /workspaces/eaglercraft-1.21.5/server/libraries/org/joml/joml/1.10.9/joml-1.10.9.jar
+[12:03:35] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library /workspaces/eaglercraft-1.21.5/server/libraries/it/unimi/dsi/fastutil/8.5.16/fastutil-8.5.16.jar
+[12:03:35] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library /workspaces/eaglercraft-1.21.5/server/libraries/team/unnamed/mocha/3.0.0/mocha-3.0.0.jar
+[12:03:35] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library /workspaces/eaglercraft-1.21.5/server/libraries/org/javassist/javassist/3.30.2-GA/javassist-3.30.2-GA.jar
+[12:03:35] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library /workspaces/eaglercraft-1.21.5/server/libraries/org/jetbrains/annotations/24.0.1/annotations-24.0.1.jar
+[12:03:35] [Server thread/INFO]: No resource with the name "templates.yml" founded.
+[12:03:35] [Server thread/INFO]: Loading file "templates.yml".
+[12:03:35] [Server thread/INFO]: File "templates.yml" is up to date. Importing configurations.
+[12:03:35] [Server thread/INFO]: No resource with the name "elo.yml" founded.
+[12:03:36] [Server thread/INFO]: Loading file "elo.yml".
+[12:03:36] [Server thread/INFO]: File "elo.yml" is up to date. Importing configurations.
+[12:03:36] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.9.1
+[12:03:36] [Server thread/INFO]: [ViaVersion] ViaVersion 5.9.1 is now loaded. Registering protocol transformers and injecting...
+[12:03:37] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading block connection mappings ...
+[12:03:37] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[12:03:37] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[12:03:38] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.4.1+76eaf25bd
+[12:03:40] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@444d2781]
+[12:03:40] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.9.1
+[12:03:40] [Server thread/INFO]: [Citizens] Loading server plugin Citizens v2.0.43-SNAPSHOT (build 4207)
+[12:03:40] [Server thread/INFO]: [TAB] Loading server plugin TAB v6.0.2
+[12:03:40] [Server thread/INFO]: [PhoenixDuelsLite] Loading server plugin PhoenixDuelsLite v3.0.7
+[12:03:40] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.12.4
+[12:03:40] [Server thread/INFO]: [CrystalBot] Loading server plugin CrystalBot v1.0.2
+[12:03:40] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[12:03:40] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.4.1+76eaf25bd
+[12:03:40] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[12:03:41] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[12:03:42] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_21_11.PaperweightAdapter as the Bukkit adapter
+[12:03:42] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.12.4
+[12:03:43] [Server thread/INFO]: [SkinsRestorer] -------------------------/Warning\-------------------------
+[12:03:43] [Server thread/INFO]: [SkinsRestorer] This plugin is running in PROXY mode!
+[12:03:43] [Server thread/INFO]: [SkinsRestorer] You have to put the same config.yml on all servers and on the proxy.
+[12:03:43] [Server thread/INFO]: [SkinsRestorer] (<proxy>/plugins/SkinsRestorer/)
+[12:03:43] [Server thread/INFO]: [SkinsRestorer] -------------------------\Warning/-------------------------
+[12:03:43] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.21.11.
+[12:03:43] [Server thread/WARN]: [SkinsRestorer] Proxy mode API is enabled (server.proxyMode.api), but database storage is not set up. Configure MySQL or PostgreSQL on all servers and on the proxy and use the same settings.
+[12:03:44] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[12:03:44] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[12:03:44] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[12:03:44] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
+[12:03:44] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[12:03:44] [Server thread/INFO]: Preparing level "world"
+[12:03:44] [Folia Async Scheduler Thread #0/INFO]: [SkinsRestorer] ----------------------------------------------
+[12:03:44] [Folia Async Scheduler Thread #0/INFO]: [SkinsRestorer]     +===================+
+[12:03:44] [Folia Async Scheduler Thread #0/INFO]: [SkinsRestorer]     |   SkinsRestorer   |
+[12:03:44] [Folia Async Scheduler Thread #0/INFO]: [SkinsRestorer]     |-------------------|
+[12:03:44] [Folia Async Scheduler Thread #0/INFO]: [SkinsRestorer]     |     Proxy Mode    |
+[12:03:44] [Folia Async Scheduler Thread #0/INFO]: [SkinsRestorer]     +===================+
+[12:03:44] [Folia Async Scheduler Thread #0/INFO]: [SkinsRestorer] ----------------------------------------------
+[12:03:44] [Folia Async Scheduler Thread #0/INFO]: [SkinsRestorer]     Version: 15.12.4
+[12:03:44] [Folia Async Scheduler Thread #0/INFO]: [SkinsRestorer]     Commit: a5b2c20
+[12:03:44] [Folia Async Scheduler Thread #0/INFO]: [SkinsRestorer]     This is the latest version!
+[12:03:44] [Folia Async Scheduler Thread #0/INFO]: [SkinsRestorer] ----------------------------------------------
+[12:03:44] [Folia Async Scheduler Thread #0/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[12:03:44] [Folia Async Scheduler Thread #0/INFO]: [SkinsRestorer] Want to support SkinsRestorer or receive priority support? Become a supporter: https://skinsrestorer.net/pricing
+[12:03:44] [Server thread/INFO]: [ca.spottedleaf.moonrise.common.util.MoonriseConstants] NUMA enable flag is not set; however there is NUMA interaction support for this OS.
+[12:03:44] [Server thread/INFO]: [ca.spottedleaf.moonrise.common.util.MoonriseConstants] Detected 1 NUMA nodes.
+[12:03:46] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[12:03:46] [Server thread/INFO]: Prepared spawn area in 1 ms
+[12:03:46] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[12:03:46] [Server thread/INFO]: Prepared spawn area in 6 ms
+[12:03:46] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[12:03:46] [Server thread/INFO]: Prepared spawn area in 2 ms
+[12:03:46] [Server thread/INFO]: Done preparing level "world" (1.706s)
+[12:03:46] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.9.1
+[12:03:46] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21.11 (774)
+[12:03:46] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.9.1
+[12:03:46] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.43-SNAPSHOT (build 4207)
+[12:03:47] [Server thread/INFO]: [Citizens] Loaded 2 templates.
+[12:03:47] [Server thread/INFO]: [TAB] Enabling TAB v6.0.2
+[12:03:48] [Server thread/INFO]: [TAB] Found NMS implementation: me.neznamy.tab.platforms.bukkit.paper_1_21_11.NMSImplementationProvider
+[12:03:48] [Server thread/INFO]: [TAB] Enabled in 624ms
+[12:03:48] [Server thread/INFO]: [PhoenixDuelsLite] Enabling PhoenixDuelsLite v3.0.7
+[12:03:48] [Server thread/INFO]: Loading cross version adapter...
+[12:03:48] [Server thread/WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[12:04:06] [Server thread/INFO]:   ____    ____             _     
+[12:04:06] [Server thread/INFO]:  |  _ \  |  _ \ _   _  ___| |___ 
+[12:04:06] [Server thread/INFO]:  | |_) | | | | | | | |/ _ \ / __|
+[12:04:06] [Server thread/INFO]:  |  __/  | |_| | |_| |  __/ \__ \
+[12:04:06] [Server thread/INFO]:  |_| (_) |____/ \__,_|\___|_|___/ Lite v3.0.7
+[12:04:06] [Server thread/INFO]:                                       
+[12:04:06] [Server thread/INFO]: Created by Phoenix Plugins
+[12:04:06] [Server thread/INFO]: https://phoenixplugins.com/
+[12:04:06] [Server thread/INFO]: 
+[12:04:06] [Server thread/INFO]: Loading settings...
+[12:04:06] [Server thread/INFO]: Loading file "config.yml".
+[12:04:06] [Server thread/INFO]: File "config.yml" is up to date. Importing configurations.
+[12:04:06] [Server thread/INFO]: Vault is not installed. If you want to use economy in this plugin install it.
+[12:04:06] [Server thread/INFO]: -> See more at: https://www.spigotmc.org/resources/vault.34315/
+[12:04:06] [Server thread/INFO]: PlaceholderAPI is not installed. If you want to support more placeholders in this plugin install it.
+[12:04:06] [Server thread/INFO]: -> See more at: https://www.spigotmc.org/resources/placeholderapi.6245/
+[12:04:06] [Server thread/INFO]: Checking for possible migrations...
+[12:04:06] [Server thread/INFO]: [PhoenixDuelsLite] Current patch: #202521111848
+[12:04:06] [Server thread/INFO]: [PhoenixDuelsLite] No patches to run.
+[12:04:06] [Server thread/INFO]: WorldEdit founded. Preparing placeholders...
+[12:04:06] [Server thread/INFO]: Loading commands...
+[12:04:07] [Server thread/INFO]: Loading database...
+[12:04:07] [Server thread/WARN]: 8 [Server thread] INFO com.phoenixplugins.phoenixduels.lib.hikari.HikariDataSource - CyberSQLitePool - Starting...
+[12:04:07] [Server thread/WARN]: 244 [Server thread] INFO com.phoenixplugins.phoenixduels.lib.hikari.HikariDataSource - CyberSQLitePool - Start completed.
+[12:04:07] [Server thread/INFO]: Loading menus...
+[12:04:07] [Server thread/INFO]: Loading file "menus/select_map.yml".
+[12:04:07] [Server thread/INFO]: File "menus/select_map.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/select_mode.yml".
+[12:04:07] [Server thread/INFO]: File "menus/select_mode.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/items_betting.yml".
+[12:04:07] [Server thread/INFO]: File "menus/items_betting.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/custom/select_arena_mode.yml".
+[12:04:07] [Server thread/INFO]: File "menus/custom/select_arena_mode.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/custom/create_match.yml".
+[12:04:07] [Server thread/INFO]: File "menus/custom/create_match.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/custom/duel_player.yml".
+[12:04:07] [Server thread/INFO]: File "menus/custom/duel_player.yml" need to be updated. Creating a backup named "menus/custom/duel_player.yml.backup".
+[12:04:07] [Server thread/INFO]: Migrating old configurations...
+[12:04:07] [Server thread/INFO]: -> Path: [external-spectator.slot]
+[12:04:07] [Server thread/INFO]: --> Warning: When using "SlotCompound" adapter. Expected "Integer", founded "". Ignoring yaml value and using predefined value.
+[12:04:07] [Server thread/INFO]: File "menus/custom/duel_player.yml" updated!
+[12:04:07] [Server thread/INFO]: Loading file "menus/custom/challenge_opponent.yml".
+[12:04:07] [Server thread/INFO]: File "menus/custom/challenge_opponent.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/unranked/select_player_mode.yml".
+[12:04:07] [Server thread/INFO]: File "menus/unranked/select_player_mode.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/unranked/select_arena_mode.yml".
+[12:04:07] [Server thread/INFO]: File "menus/unranked/select_arena_mode.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/ranked/select_player_mode.yml".
+[12:04:07] [Server thread/INFO]: File "menus/ranked/select_player_mode.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/ranked/select_arena_mode.yml".
+[12:04:07] [Server thread/INFO]: File "menus/ranked/select_arena_mode.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/queue.yml".
+[12:04:07] [Server thread/INFO]: File "menus/queue.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/stats.yml".
+[12:04:07] [Server thread/INFO]: File "menus/stats.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/leaderboard.yml".
+[12:04:07] [Server thread/INFO]: File "menus/leaderboard.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/settings.yml".
+[12:04:07] [Server thread/INFO]: File "menus/settings.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/party/party.yml".
+[12:04:07] [Server thread/INFO]: File "menus/party/party.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/party/info.yml".
+[12:04:07] [Server thread/INFO]: File "menus/party/info.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/party/invite_player.yml".
+[12:04:07] [Server thread/INFO]: File "menus/party/invite_player.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/party/manage_member.yml".
+[12:04:07] [Server thread/INFO]: File "menus/party/manage_member.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "spectator_hotbar.yml".
+[12:04:07] [Server thread/INFO]: File "spectator_hotbar.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading file "menus/kit_editor.yml".
+[12:04:07] [Server thread/INFO]: File "menus/kit_editor.yml" is up to date. Importing configurations.
+[12:04:07] [Server thread/INFO]: Loading players data...
+[12:04:07] [Server thread/INFO]: Loading blobs...
+[12:04:08] [Server thread/INFO]: Loading duels settings...
+[12:04:08] [Server thread/INFO]: Loading file "modes/mace.yml".
+[12:04:08] [Server thread/INFO]: File "modes/mace.yml" is up to date. Importing configurations.
+[12:04:08] [Server thread/INFO]: Loading file "modes/arena_mode_7267.yml".
+[12:04:08] [Server thread/INFO]: File "modes/arena_mode_7267.yml" is up to date. Importing configurations.
+[12:04:08] [Server thread/INFO]: Loading file "modes/arena_mode_5157.yml".
+[12:04:08] [Server thread/INFO]: File "modes/arena_mode_5157.yml" is up to date. Importing configurations.
+[12:04:08] [Server thread/INFO]: Loading file "modes/classic.yml".
+[12:04:08] [Server thread/INFO]: File "modes/classic.yml" is up to date. Importing configurations.
+[12:04:08] [Server thread/INFO]: Loaded 4 modes.
+[12:04:08] [Server thread/INFO]: Loading file "maps/fireworkmace.yml".
+[12:04:09] [Server thread/INFO]: File "maps/fireworkmace.yml" is up to date. Importing configurations.
+[12:04:09] [Server thread/INFO]: Loading file "maps/smp.yml".
+[12:04:09] [Server thread/INFO]: File "maps/smp.yml" is up to date. Importing configurations.
+[12:04:09] [Server thread/INFO]: Loading file "maps/sword_1.yml".
+[12:04:09] [Server thread/INFO]: File "maps/sword_1.yml" is up to date. Importing configurations.
+[12:04:09] [Server thread/INFO]: Loading file "maps/mace_2.yml".
+[12:04:09] [Server thread/INFO]: File "maps/mace_2.yml" is up to date. Importing configurations.
+[12:04:09] [Server thread/INFO]: Loaded 4 arenas.
+[12:04:09] [Server thread/INFO]: Loading file "sounds.yml".
+[12:04:09] [Server thread/INFO]: File "sounds.yml" is up to date. Importing configurations.
+[12:04:09] [Server thread/INFO]: 
+[12:04:09] [Server thread/INFO]: Plugin loaded successfully!
+[12:04:09] [Server thread/INFO]: [Any questions or problems that may arise, contact us through
+[12:04:09] [Server thread/INFO]: the website or our discord: https://phoenixplugins.com/media/discord]
+[12:04:09] [Server thread/INFO]: 
+[12:04:09] [Server thread/INFO]: [CrystalBot] Enabling CrystalBot v1.0.2
+[12:04:09] [Server thread/INFO]: [spark] Starting background profiler...
+[12:04:10] [Server thread/INFO]: Running delayed init tasks
+[12:04:10] [Craft Scheduler Thread - 5 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[12:04:11] [Server thread/INFO]: [Citizens] Loaded 1 NPCs.
+[12:04:11] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.10.0, you're on: 5.9.1
+[12:04:11] [Server thread/INFO]: Done (76.296s)! For help, type "help"
+[12:04:11] [Paper Async Task Handler Thread - 1/WARN]: *** You are running an outdated version of Minecraft, which is 2 release(s) and 16 build(s) behind!
+[12:04:11] [Paper Async Task Handler Thread - 1/WARN]: *** Please update to the latest stable version on https://papermc.io/downloads/paper ***
