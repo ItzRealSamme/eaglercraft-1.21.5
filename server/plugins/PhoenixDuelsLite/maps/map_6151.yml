@@ -1,0 +1,66 @@
+sort-order: 1000
+enabled: true
+type: FREE_MODE
+identifier: spearmace
+display-name: Spearmace
+display-icon: NETHERITE_SPEAR
+template:
+  universal-region:
+    minimum:
+      x: -59.0
+      y: -46.0
+      z: -34.0
+    maximum:
+      x: 59.0
+      y: 47.0
+      z: 33.0
+  battle-region:
+    minimum:
+      x: -59.0
+      y: -46.0
+      z: -34.0
+    maximum:
+      x: 59.0
+      y: 47.0
+      z: 33.0
+  spectator-position:
+    x: -1.8156172355415379
+    y: -25.73066801281132
+    z: -0.9363490790751712
+    yaw: -89.875305
+    pitch: 0.7507857
+  teams:
+    '0':
+      positions:
+        '0':
+          x: 40.751835256309164
+          y: -45.0
+          z: 0.011085109981536334
+          yaw: 90.74841
+          pitch: -2.0244112
+    '1':
+      positions:
+        '0':
+          x: -37.17356928198751
+          y: -45.0
+          z: -0.03584453015503186
+          yaw: -90.052704
+          pitch: -1.8177476
+  extras: {}
+regeneration: false
+teleport-to-lobby: true
+allowed-modes:
+- spearmace
+team-colors:
+- RED
+- BLUE
+arenas:
+  '0':
+    reference:
+      world: world
+      x: 441
+      y: 254
+      z: -891
+dont-edit:
+  assistance-stage: 4
+  blob-key: b71b49d543704bf8be88a53844587dff

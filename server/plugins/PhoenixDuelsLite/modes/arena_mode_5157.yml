@@ -141,14 +141,6 @@ loadout:
         count: 64
         schema_version: 1
     '12':
-      slot: 6
-      item:
-        ==: org.bukkit.inventory.ItemStack
-        DataVersion: 4671
-        id: minecraft:firework_rocket
-        count: 64
-        schema_version: 1
-    '13':
       slot: 17
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -158,7 +150,7 @@ loadout:
         components:
           minecraft:potion_contents: '{potion:"minecraft:long_strength"}'
         schema_version: 1
-    '14':
+    '13':
       slot: 26
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -168,7 +160,7 @@ loadout:
         components:
           minecraft:potion_contents: '{potion:"minecraft:long_strength"}'
         schema_version: 1
-    '15':
+    '14':
       slot: 18
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -178,7 +170,7 @@ loadout:
         components:
           minecraft:potion_contents: '{potion:"minecraft:long_fire_resistance"}'
         schema_version: 1
-    '16':
+    '15':
       slot: 27
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -188,7 +180,7 @@ loadout:
         components:
           minecraft:potion_contents: '{potion:"minecraft:long_fire_resistance"}'
         schema_version: 1
-    '17':
+    '16':
       slot: 36
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -198,7 +190,7 @@ loadout:
         components:
           minecraft:potion_contents: '{potion:"minecraft:long_fire_resistance"}'
         schema_version: 1
-    '18':
+    '17':
       slot: 3
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -206,7 +198,7 @@ loadout:
         id: minecraft:golden_apple
         count: 64
         schema_version: 1
-    '19':
+    '18':
       slot: 2
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -216,7 +208,7 @@ loadout:
         components:
           minecraft:enchantments: '{"minecraft:fire_aspect":2,"minecraft:looting":3,"minecraft:mending":1,"minecraft:sharpness":5,"minecraft:sweeping_edge":3,"minecraft:unbreaking":3}'
         schema_version: 1
-    '20':
+    '19':
       slot: 1
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -224,7 +216,7 @@ loadout:
         id: minecraft:ender_pearl
         count: 16
         schema_version: 1
-    '21':
+    '20':
       slot: 28
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -232,7 +224,7 @@ loadout:
         id: minecraft:ender_pearl
         count: 16
         schema_version: 1
-    '22':
+    '21':
       slot: 19
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -240,7 +232,7 @@ loadout:
         id: minecraft:ender_pearl
         count: 16
         schema_version: 1
-    '23':
+    '22':
       slot: 10
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -248,7 +240,7 @@ loadout:
         id: minecraft:experience_bottle
         count: 64
         schema_version: 1
-    '24':
+    '23':
       slot: 29
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -256,7 +248,7 @@ loadout:
         id: minecraft:totem_of_undying
         count: 1
         schema_version: 1
-    '25':
+    '24':
       slot: 20
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -264,7 +256,7 @@ loadout:
         id: minecraft:totem_of_undying
         count: 1
         schema_version: 1
-    '26':
+    '25':
       slot: 11
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -272,7 +264,7 @@ loadout:
         id: minecraft:totem_of_undying
         count: 1
         schema_version: 1
-    '27':
+    '26':
       slot: 30
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -282,7 +274,7 @@ loadout:
         components:
           minecraft:potion_contents: '{potion:"minecraft:long_swiftness"}'
         schema_version: 1
-    '28':
+    '27':
       slot: 31
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -292,7 +284,7 @@ loadout:
         components:
           minecraft:potion_contents: '{potion:"minecraft:long_swiftness"}'
         schema_version: 1
-    '29':
+    '28':
       slot: 22
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -302,7 +294,7 @@ loadout:
         components:
           minecraft:potion_contents: '{potion:"minecraft:long_swiftness"}'
         schema_version: 1
-    '30':
+    '29':
       slot: 21
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -312,7 +304,7 @@ loadout:
         components:
           minecraft:potion_contents: '{potion:"minecraft:long_swiftness"}'
         schema_version: 1
-    '31':
+    '30':
       slot: 12
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -322,7 +314,7 @@ loadout:
         components:
           minecraft:potion_contents: '{potion:"minecraft:long_swiftness"}'
         schema_version: 1
-    '32':
+    '31':
       slot: 13
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -332,7 +324,7 @@ loadout:
         components:
           minecraft:potion_contents: '{potion:"minecraft:long_swiftness"}'
         schema_version: 1
-    '33':
+    '32':
       slot: 4
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -342,7 +334,7 @@ loadout:
         components:
           minecraft:enchantments: '{"minecraft:breach":4,"minecraft:fire_aspect":2,"minecraft:mending":1,"minecraft:unbreaking":3}'
         schema_version: 1
-    '34':
+    '33':
       slot: 40
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -352,7 +344,7 @@ loadout:
         components:
           minecraft:enchantments: '{"minecraft:aqua_affinity":1,"minecraft:mending":1,"minecraft:protection":4,"minecraft:respiration":3,"minecraft:unbreaking":3}'
         schema_version: 1
-    '35':
+    '34':
       slot: 39
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -362,7 +354,7 @@ loadout:
         components:
           minecraft:enchantments: '{"minecraft:mending":1,"minecraft:protection":4,"minecraft:unbreaking":3}'
         schema_version: 1
-    '36':
+    '35':
       slot: 37
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -372,7 +364,7 @@ loadout:
         components:
           minecraft:enchantments: '{"minecraft:depth_strider":3,"minecraft:feather_falling":4,"minecraft:mending":1,"minecraft:protection":4,"minecraft:soul_speed":3,"minecraft:unbreaking":3}'
         schema_version: 1
-    '37':
+    '36':
       slot: 41
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -380,7 +372,7 @@ loadout:
         id: minecraft:totem_of_undying
         count: 1
         schema_version: 1
-    '38':
+    '37':
       slot: 38
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -390,7 +382,7 @@ loadout:
         components:
           minecraft:enchantments: '{"minecraft:mending":1,"minecraft:protection":4,"minecraft:swift_sneak":3,"minecraft:unbreaking":3}'
         schema_version: 1
-    '39':
+    '38':
       slot: 24
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -400,7 +392,7 @@ loadout:
         components:
           minecraft:potion_contents: '{potion:"minecraft:long_strength"}'
         schema_version: 1
-    '40':
+    '39':
       slot: 33
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -409,6 +401,14 @@ loadout:
         count: 1
         components:
           minecraft:potion_contents: '{potion:"minecraft:long_strength"}'
+        schema_version: 1
+    '40':
+      slot: 6
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:firework_rocket
+        count: 32
         schema_version: 1
 scoreboard:
   enabled: true

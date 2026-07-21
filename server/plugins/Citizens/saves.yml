@@ -1,5 +1,5 @@
 # Citizens NPC Storage
-last-created-npc-id: 6
+last-created-npc-id: 28
 npc:
   '6':
     metadata:
@@ -20,7 +20,7 @@ npc:
         worldid: 7cd930d3-c620-402f-b6c1-d8b57da18733
         x: 176.7
         y: 129.0
-        z: -410.3
+        z: -411.0361
         bodyYaw: 132.5632
         pitch: 0.0
         yaw: 132.5632

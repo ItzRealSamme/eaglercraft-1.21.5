@@ -24,9 +24,8 @@
       "minecraft:lilac": 1,
       "minecraft:acacia_log": 5
     },
-    "minecraft:crafted": {
-      "minecraft:oak_planks": 24,
-      "minecraft:acacia_planks": 20
+    "minecraft:killed_by": {
+      "minecraft:player": 24
     },
     "minecraft:picked_up": {
       "minecraft:dirt": 2,
@@ -43,37 +42,34 @@
       "minecraft:wheat_seeds": 10,
       "minecraft:pumpkin": 1
     },
-    "minecraft:killed_by": {
-      "minecraft:player": 23
-    },
     "minecraft:custom": {
-      "minecraft:time_since_rest": 43235,
-      "minecraft:leave_game": 17,
-      "minecraft:damage_taken": 20198,
-      "minecraft:damage_absorbed": 3385,
-      "minecraft:time_since_death": 43201,
-      "minecraft:aviate_one_cm": 346579,
-      "minecraft:damage_dealt_absorbed": 5405,
-      "minecraft:total_world_time": 151852,
+      "minecraft:time_since_rest": 20361,
+      "minecraft:leave_game": 21,
+      "minecraft:damage_taken": 21994,
+      "minecraft:damage_absorbed": 3853,
+      "minecraft:time_since_death": 20215,
+      "minecraft:aviate_one_cm": 593831,
+      "minecraft:damage_dealt_absorbed": 6049,
+      "minecraft:total_world_time": 173687,
       "minecraft:swim_one_cm": 81405,
       "minecraft:crouch_one_cm": 6171,
-      "minecraft:climb_one_cm": 7996,
-      "minecraft:deaths": 31,
-      "minecraft:player_kills": 5,
+      "minecraft:climb_one_cm": 8100,
+      "minecraft:deaths": 32,
+      "minecraft:player_kills": 6,
       "minecraft:damage_blocked_by_shield": 2184,
-      "minecraft:walk_one_cm": 271486,
-      "minecraft:walk_under_water_one_cm": 5022,
-      "minecraft:play_time": 151852,
-      "minecraft:damage_dealt": 14806,
-      "minecraft:jump": 1922,
+      "minecraft:walk_one_cm": 315046,
+      "minecraft:walk_under_water_one_cm": 5206,
+      "minecraft:play_time": 173687,
+      "minecraft:damage_dealt": 16950,
+      "minecraft:jump": 2254,
       "minecraft:drop": 13,
-      "minecraft:sprint_one_cm": 319762,
+      "minecraft:sprint_one_cm": 352175,
       "minecraft:open_chest": 1,
-      "minecraft:fall_one_cm": 695336,
-      "minecraft:fly_one_cm": 391101,
+      "minecraft:fall_one_cm": 787147,
+      "minecraft:fly_one_cm": 469886,
       "minecraft:interact_with_anvil": 3,
-      "minecraft:walk_on_water_one_cm": 16340,
-      "minecraft:sneak_time": 10911
+      "minecraft:walk_on_water_one_cm": 16384,
+      "minecraft:sneak_time": 10915
     },
     "minecraft:used": {
       "minecraft:leaf_litter": 13,
@@ -85,25 +81,30 @@
       "minecraft:diamond_sword": 84,
       "minecraft:netherite_axe": 35,
       "minecraft:fire_charge": 2,
-      "minecraft:firework_rocket": 71,
+      "minecraft:firework_rocket": 90,
+      "minecraft:golden_carrot": 5,
       "minecraft:pumpkin": 1,
-      "minecraft:elytra": 128,
+      "minecraft:elytra": 179,
       "minecraft:water_bucket": 10,
-      "minecraft:netherite_spear": 1,
+      "minecraft:netherite_spear": 5,
       "minecraft:dirt": 1,
       "minecraft:obsidian": 1,
       "minecraft:sand": 1,
-      "minecraft:wind_charge": 884,
+      "minecraft:wind_charge": 1026,
       "minecraft:firefly_bush": 5,
       "minecraft:cobweb": 31,
-      "minecraft:mace": 244,
-      "minecraft:golden_apple": 86,
+      "minecraft:mace": 267,
+      "minecraft:golden_apple": 101,
       "minecraft:bucket": 10,
-      "minecraft:splash_potion": 71,
-      "minecraft:netherite_chestplate": 127,
+      "minecraft:splash_potion": 79,
+      "minecraft:netherite_chestplate": 177,
       "minecraft:enchanted_golden_apple": 1,
       "minecraft:sugar_cane": 3,
-      "minecraft:ender_pearl": 164
+      "minecraft:ender_pearl": 193
+    },
+    "minecraft:crafted": {
+      "minecraft:oak_planks": 24,
+      "minecraft:acacia_planks": 20
     }
   },
   "DataVersion": 4671

@@ -20,9 +20,9 @@ worlds:
   disabled:
   - world_nether
 allowed-types:
-- CHALLENGE
 - UNRANKED
 - RANKED
+- CHALLENGE
 match:
   default-finishing-seconds: 5
   extended-finishing-seconds: 60
@@ -36,8 +36,8 @@ match:
     enabled: true
     prefix: '%color%[%team%] '
 betting:
-  money-enabled: true
-  items-enabled: true
+  money-enabled: false
+  items-enabled: false
 items-betting:
   max-items-per-player: 10
 cache:
@@ -63,9 +63,6 @@ commands:
   kiteditor:
     enabled: true
     alternative: kiteditor
-  editor:
-    enabled: true
-    alternative: editor
   stats:
     enabled: true
     alternative: stats

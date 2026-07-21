@@ -4,7 +4,7 @@ identifier: smp
 display-name: Smp
 display-description:
 - '&7This is a custom description'
-display-icon: NETHERITE_CHESTPLATE
+display-icon: CHORUS_FRUIT
 allowed-player-type:
 - UNRANKED_SOLO
 - UNRANKED_DUO
@@ -272,10 +272,10 @@ loadout:
       item:
         ==: org.bukkit.inventory.ItemStack
         DataVersion: 4671
-        id: minecraft:splash_potion
+        id: minecraft:netherite_pickaxe
         count: 1
         components:
-          minecraft:potion_contents: '{potion:"minecraft:strong_strength"}'
+          minecraft:enchantments: '{"minecraft:efficiency":5,"minecraft:mending":1,"minecraft:silk_touch":1,"minecraft:unbreaking":3}'
         schema_version: 1
     '28':
       slot: 8
@@ -358,6 +358,16 @@ loadout:
           minecraft:potion_contents: '{potion:"minecraft:strong_strength"}'
         schema_version: 1
     '36':
+      slot: 41
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:shield
+        count: 1
+        components:
+          minecraft:enchantments: '{"minecraft:mending":1,"minecraft:unbreaking":3}'
+        schema_version: 1
+    '37':
       slot: 40
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -367,7 +377,7 @@ loadout:
         components:
           minecraft:enchantments: '{"minecraft:aqua_affinity":1,"minecraft:mending":1,"minecraft:protection":4,"minecraft:respiration":3,"minecraft:unbreaking":3}'
         schema_version: 1
-    '37':
+    '38':
       slot: 39
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -377,7 +387,7 @@ loadout:
         components:
           minecraft:enchantments: '{"minecraft:mending":1,"minecraft:protection":4,"minecraft:unbreaking":3}'
         schema_version: 1
-    '38':
+    '39':
       slot: 38
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -387,7 +397,7 @@ loadout:
         components:
           minecraft:enchantments: '{"minecraft:mending":1,"minecraft:protection":4,"minecraft:swift_sneak":3,"minecraft:unbreaking":3}'
         schema_version: 1
-    '39':
+    '40':
       slot: 37
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -396,16 +406,6 @@ loadout:
         count: 1
         components:
           minecraft:enchantments: '{"minecraft:depth_strider":3,"minecraft:feather_falling":4,"minecraft:mending":1,"minecraft:protection":4,"minecraft:unbreaking":3}'
-        schema_version: 1
-    '40':
-      slot: 41
-      item:
-        ==: org.bukkit.inventory.ItemStack
-        DataVersion: 4671
-        id: minecraft:shield
-        count: 1
-        components:
-          minecraft:enchantments: '{"minecraft:mending":1,"minecraft:unbreaking":3}'
         schema_version: 1
 scoreboard:
   enabled: true

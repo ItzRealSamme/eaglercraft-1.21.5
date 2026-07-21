@@ -1,7 +1,7 @@
-[12:03:10] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.5.0-SNAPSHOT (git-9c0c9b02-b595)...
-[12:03:11] [main/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
-[12:03:11] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
-[12:03:11] [main/INFO] [com.velocitypowered.proxy.config.VelocityConfiguration]: Unable to load your server-icon.png, continuing without it.
+[04:02:18] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.5.0-SNAPSHOT (git-9c0c9b02-b595)...
+[04:02:18] [main/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
+[04:02:19] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[04:02:19] [main/INFO] [com.velocitypowered.proxy.config.VelocityConfiguration]: Unable to load your server-icon.png, continuing without it.
 java.lang.IllegalArgumentException: Image is not 64x64 (found 232x186)
 	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:301)
 	at com.velocitypowered.api.util.Favicon.create(Favicon.java:82)
@@ -11,77 +11,77 @@ java.lang.IllegalArgumentException: Image is not 64x64 (found 232x186)
 	at com.velocitypowered.proxy.VelocityServer.doStartupConfigLoad(VelocityServer.java:406)
 	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:290)
 	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71)
-[12:03:11] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
-[12:03:12] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
-[12:03:13] [main/ERROR] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Refusing to load plugin at path plugins/SkinsRestorer.jar since we already loaded a plugin with the same ID skinsrestorer from plugins/SkinsRestorer (1).jar
-[12:03:13] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin skinsrestorer 15.12.0 by knat, AlexProgrammerDE, Blackfire62, McLive
-[12:03:13] [main/INFO] [eaglerxserver]: Loading EaglercraftXServer 1.1.0...
-[12:03:13] [main/INFO] [eaglerxserver]: (Platform: Velocity)
-[12:03:14] [main/INFO] [eaglerxserver]: Server Name: "EaglercraftXServer"
-[12:03:14] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerxserver 1.1.0 by lax1dude
-[12:03:15] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerweb 1.0.0 by lax1dude
-[12:03:15] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerxrewind-1-5 1.0.2 by lax1dude, ayunami2000
-[12:03:15] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin nlogin 10.4.27 by NickUC
-[12:03:15] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 6 plugins
-[12:03:18] [SkinsRestorer - Task Executor #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-[12:03:18] [SkinsRestorer - Task Executor #0/INFO] [eaglerxserver]: Enabling EaglercraftXServer 1.1.0...
-[12:03:18] [SkinsRestorer - Task Executor #0/INFO] [eaglerxserver]: Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
-[12:03:18] [SkinsRestorer - Task Executor #0/INFO] [eaglerxserver]: Connected to skin cache database successfully!
-[12:03:18] [SkinsRestorer - Task Executor #0/INFO] [eaglerxserver]: Listening for SkinsRestorer skin apply event on vanilla players
-[12:03:19] [SkinsRestorer - Task Executor #0/INFO] [eaglerweb]: Loading config files...
-[12:03:19] [SkinsRestorer - Task Executor #0/INFO] [eaglerweb]: Indexing pages, please wait...
-[12:03:19] [SkinsRestorer - Task Executor #0/INFO] [eaglerweb]: Indexed 12 pages total!
-[12:03:19] [SkinsRestorer - Task Executor #0/INFO] [eaglerxrewind-1-5]: EaglerXRewind protocol for Eaglercraft 1.5.2 has been registered
-[12:03:20] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]: ----------------------------------------------
-[12:03:20] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]:     +==================+
-[12:03:20] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]:     |   SkinsRestorer  |
-[12:03:20] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]:     |------------------|
-[12:03:20] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]:     +==================+
-[12:03:20] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]: ----------------------------------------------
-[12:03:20] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]:     Version: 15.12.0
-[12:03:20] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]:     Commit: 2903414
-[12:03:20] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]:     A new version (15.12.4) is available!
-[12:03:20] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]:     https://modrinth.com/plugin/skinsrestorer/version/15.12.4
-[12:03:20] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]: ----------------------------------------------
-[12:03:20] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]: Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
-[12:03:20] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]: Want to support SkinsRestorer or receive priority support? Become a supporter: https://skinsrestorer.net/pricing
-[12:03:20] [Netty epoll Worker #0/INFO] [eaglerxserver]: You are running the latest version of EaglerXServer
-[12:03:22] [SkinsRestorer - Task Executor #0/INFO] [nlogin]: Successful plugin core start (took 1.76s)
-[12:03:22] [SkinsRestorer - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:           __             _       
-[12:03:22] [SkinsRestorer - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   _ __   / /  ___   __ _(_)_ __  
-[12:03:22] [SkinsRestorer - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  | '_ \ / /  / _ \ / _` | | '_ \ 
-[12:03:22] [SkinsRestorer - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  | | | / /__| (_) | (_| | | | | |
-[12:03:22] [SkinsRestorer - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  |_| |_\____/\___/ \__, |_|_| |_|
-[12:03:22] [SkinsRestorer - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:                   |___/            
-[12:03:22] [SkinsRestorer - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  By: www.nickuc.com - V 10.4.27
-[12:03:22] [SkinsRestorer - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  
-[12:03:23] [Netty epoll Worker #1/INFO] [eaglerxserver]: Listener "listener0" injected into channel [id: 0xf580ee74, L:/[0:0:0:0:0:0:0:0]:25567] successfully (Velocity method)
-[12:03:23] [Netty epoll Worker #1/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25567
-[12:03:23] [Netty epoll Worker #2/INFO] [eaglerxserver]: Listener "listener0" injected into channel [id: 0x5696c86c, L:/[0:0:0:0:0:0:0:0]:25567] successfully (Velocity method)
-[12:03:23] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25567
-[12:03:24] [Netty epoll Worker #3/INFO] [eaglerxserver]: Listener "listener0" injected into channel [id: 0x216c5a10, L:/[0:0:0:0:0:0:0:0]:25567] successfully (Velocity method)
-[12:03:24] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25567
-[12:03:24] [Netty epoll Worker #0/INFO] [eaglerxserver]: Listener "listener0" injected into channel [id: 0x849e4299, L:/[0:0:0:0:0:0:0:0]:25567] successfully (Velocity method)
-[12:03:24] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25567
-[12:03:24] [main/INFO] [com.velocitypowered.proxy.Velocity]: Done (14.81s)!
-[12:03:28] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]: 
-[12:03:28] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  Thank you so much for choosing nLogin! <3
-[12:03:28] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]: 
-[12:03:28] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  For your safety, please read the message below:
-[12:03:28] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   Never download nLogin from unknown sources.
-[12:03:28] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   A modified version may contain malicious software.
-[12:03:28] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]: 
-[12:03:28] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  Trusted sources:
-[12:03:28] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   www.nickuc.com
-[12:03:28] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   www.github.com/nickuc
-[12:03:29] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   OpeNLogin installer (from Spigot or GitHub)
-[12:03:29] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]: 
-[12:03:29] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  Official support channels:
-[12:03:29] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   Discord group: www.nickuc.com/discord
-[12:03:29] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   Documentation: docs.nickuc.com/nlogin/
-[12:03:29] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   Email: support@nickuc.com
-[12:03:29] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   YouTube: youtube.com/nickuc
-[12:03:29] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]: 
-[12:03:29] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  To remove this warning, log in with "nlogin.admin" permission on the server
-[12:03:29] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  and click the "Setup plugin" button to configure your plugin.
-[12:03:29] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]: 
+[04:02:19] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
+[04:02:19] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
+[04:02:19] [main/ERROR] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Refusing to load plugin at path plugins/SkinsRestorer.jar since we already loaded a plugin with the same ID skinsrestorer from plugins/SkinsRestorer (1).jar
+[04:02:20] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin skinsrestorer 15.12.0 by knat, AlexProgrammerDE, Blackfire62, McLive
+[04:02:20] [main/INFO] [eaglerxserver]: Loading EaglercraftXServer 1.1.0...
+[04:02:20] [main/INFO] [eaglerxserver]: (Platform: Velocity)
+[04:02:20] [main/INFO] [eaglerxserver]: Server Name: "EaglercraftXServer"
+[04:02:20] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerxserver 1.1.0 by lax1dude
+[04:02:20] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerweb 1.0.0 by lax1dude
+[04:02:20] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerxrewind-1-5 1.0.2 by lax1dude, ayunami2000
+[04:02:20] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin nlogin 10.4.27 by NickUC
+[04:02:20] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 6 plugins
+[04:02:21] [SkinsRestorer - Task Executor #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[04:02:21] [SkinsRestorer - Task Executor #0/INFO] [eaglerxserver]: Enabling EaglercraftXServer 1.1.0...
+[04:02:21] [SkinsRestorer - Task Executor #0/INFO] [eaglerxserver]: Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+[04:02:22] [SkinsRestorer - Task Executor #0/INFO] [eaglerxserver]: Connected to skin cache database successfully!
+[04:02:22] [SkinsRestorer - Task Executor #0/INFO] [eaglerxserver]: Listening for SkinsRestorer skin apply event on vanilla players
+[04:02:22] [SkinsRestorer - Task Executor #0/INFO] [eaglerweb]: Loading config files...
+[04:02:22] [SkinsRestorer - Task Executor #0/INFO] [eaglerweb]: Indexing pages, please wait...
+[04:02:22] [SkinsRestorer - Task Executor #0/INFO] [eaglerweb]: Indexed 12 pages total!
+[04:02:22] [SkinsRestorer - Task Executor #0/INFO] [eaglerxrewind-1-5]: EaglerXRewind protocol for Eaglercraft 1.5.2 has been registered
+[04:02:23] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]: ----------------------------------------------
+[04:02:23] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]:     +==================+
+[04:02:23] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]:     |   SkinsRestorer  |
+[04:02:23] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]:     |------------------|
+[04:02:23] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]:     +==================+
+[04:02:23] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]: ----------------------------------------------
+[04:02:23] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]:     Version: 15.12.0
+[04:02:23] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]:     Commit: 2903414
+[04:02:23] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]:     A new version (15.12.4) is available!
+[04:02:23] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]:     https://modrinth.com/plugin/skinsrestorer/version/15.12.4
+[04:02:23] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]: ----------------------------------------------
+[04:02:23] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]: Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[04:02:23] [SkinsRestorer - Task Executor #1/INFO] [skinsrestorer]: Want to support SkinsRestorer or receive priority support? Become a supporter: https://skinsrestorer.net/pricing
+[04:02:23] [Netty epoll Worker #0/INFO] [eaglerxserver]: You are running the latest version of EaglerXServer
+[04:02:24] [SkinsRestorer - Task Executor #0/INFO] [nlogin]: Successful plugin core start (took 0.79s)
+[04:02:24] [SkinsRestorer - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:           __             _       
+[04:02:24] [SkinsRestorer - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   _ __   / /  ___   __ _(_)_ __  
+[04:02:24] [SkinsRestorer - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  | '_ \ / /  / _ \ / _` | | '_ \ 
+[04:02:24] [SkinsRestorer - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  | | | / /__| (_) | (_| | | | | |
+[04:02:24] [SkinsRestorer - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  |_| |_\____/\___/ \__, |_|_| |_|
+[04:02:24] [SkinsRestorer - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:                   |___/            
+[04:02:24] [SkinsRestorer - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  By: www.nickuc.com - V 10.4.27
+[04:02:24] [SkinsRestorer - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  
+[04:02:25] [Netty epoll Worker #1/INFO] [eaglerxserver]: Listener "listener0" injected into channel [id: 0xe0c57690, L:/[0:0:0:0:0:0:0:0]:25567] successfully (Velocity method)
+[04:02:25] [Netty epoll Worker #1/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25567
+[04:02:25] [Netty epoll Worker #2/INFO] [eaglerxserver]: Listener "listener0" injected into channel [id: 0x8a2703d9, L:/[0:0:0:0:0:0:0:0]:25567] successfully (Velocity method)
+[04:02:25] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25567
+[04:02:25] [Netty epoll Worker #3/INFO] [eaglerxserver]: Listener "listener0" injected into channel [id: 0x9f3ab4e1, L:/[0:0:0:0:0:0:0:0]:25567] successfully (Velocity method)
+[04:02:25] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25567
+[04:02:25] [Netty epoll Worker #0/INFO] [eaglerxserver]: Listener "listener0" injected into channel [id: 0x6693a037, L:/[0:0:0:0:0:0:0:0]:25567] successfully (Velocity method)
+[04:02:25] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25567
+[04:02:25] [main/INFO] [com.velocitypowered.proxy.Velocity]: Done (7.19s)!
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]: 
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  Thank you so much for choosing nLogin! <3
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]: 
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  For your safety, please read the message below:
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   Never download nLogin from unknown sources.
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   A modified version may contain malicious software.
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]: 
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  Trusted sources:
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   www.nickuc.com
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   www.github.com/nickuc
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   OpeNLogin installer (from Spigot or GitHub)
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]: 
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  Official support channels:
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   Discord group: www.nickuc.com/discord
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   Documentation: docs.nickuc.com/nlogin/
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   Email: support@nickuc.com
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   YouTube: youtube.com/nickuc
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]: 
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  To remove this warning, log in with "nlogin.admin" permission on the server
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:  and click the "Setup plugin" button to configure your plugin.
+[04:02:30] [nLogin - Task Executor #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]: 

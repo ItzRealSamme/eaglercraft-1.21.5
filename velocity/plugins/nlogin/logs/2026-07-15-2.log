@@ -1,0 +1,35 @@
+[2026/07/15 11:23:03]: §9          __             _       
+[2026/07/15 11:23:03]: §9  _ __   / /  ___   __ _(_)_ __  
+[2026/07/15 11:23:03]: §9 | '_ \ / /  / _ \ / _` | | '_ \ 
+[2026/07/15 11:23:03]: §9 | | | / /__| (_) | (_| | | | | |
+[2026/07/15 11:23:03]: §9 |_| |_\____/\___/ \__, |_|_| |_|
+[2026/07/15 11:23:03]: §9                  |___/            
+[2026/07/15 11:23:03]: §9 By: www.nickuc.com - V 10.4.27
+[2026/07/15 11:23:03]: §9 
+[2026/07/15 11:23:03]: §3[nLogin] [DEBUG] All settings were loaded in 328 ms.
+[2026/07/15 11:23:03]: §3[nLogin] [DEBUG] Loading the messages_en.yml message file...
+[2026/07/15 11:23:03]: §3[nLogin] [DEBUG] All plugin messages were loaded in 122 ms (languageByClient=false).
+[2026/07/15 11:23:03]: §3[nLogin] [DEBUG] All proxy settings were loaded in 28 ms.
+[2026/07/15 11:23:03]: §3[nLogin] [DEBUG] Loading database...
+[2026/07/15 11:23:04]: §3[nLogin] [DEBUG] Starting logger filter...
+[2026/07/15 11:23:09]: 
+[2026/07/15 11:23:09]:  §bThank you so much for choosing nLogin! §4<3
+[2026/07/15 11:23:09]: 
+[2026/07/15 11:23:09]:  §4For your safety, please read the message below:
+[2026/07/15 11:23:09]:   §cNever download nLogin from unknown sources.
+[2026/07/15 11:23:09]:   §cA modified version may contain malicious software.
+[2026/07/15 11:23:09]: 
+[2026/07/15 11:23:09]:  §3Trusted sources:
+[2026/07/15 11:23:09]:   §bwww.nickuc.com
+[2026/07/15 11:23:09]:   §bwww.github.com/nickuc
+[2026/07/15 11:23:09]:   §bOpeNLogin installer (from Spigot or GitHub)
+[2026/07/15 11:23:09]: 
+[2026/07/15 11:23:09]:  §3Official support channels:
+[2026/07/15 11:23:09]:   §bDiscord group: §fwww.nickuc.com/discord
+[2026/07/15 11:23:09]:   §bDocumentation: §fdocs.nickuc.com/nlogin/
+[2026/07/15 11:23:09]:   §bEmail: §fsupport@nickuc.com
+[2026/07/15 11:23:09]:   §bYouTube: §fyoutube.com/nickuc
+[2026/07/15 11:23:09]: 
+[2026/07/15 11:23:09]:  §eTo remove this warning, log in with "nlogin.admin" permission on the server
+[2026/07/15 11:23:09]:  §eand click the "Setup plugin" button to configure your plugin.
+[2026/07/15 11:23:09]: 

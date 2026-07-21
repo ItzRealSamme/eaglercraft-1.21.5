@@ -1,4 +1,4 @@
-sort-order: 1000
+sort-order: 3
 enabled: true
 identifier: sword
 display-name: Sword
@@ -48,14 +48,6 @@ loadout:
         count: 1
         schema_version: 1
     '3':
-      slot: 2
-      item:
-        ==: org.bukkit.inventory.ItemStack
-        DataVersion: 4671
-        id: minecraft:golden_apple
-        count: 5
-        schema_version: 1
-    '4':
       slot: 40
       item:
         ==: org.bukkit.inventory.ItemStack
@@ -63,13 +55,21 @@ loadout:
         id: minecraft:diamond_helmet
         count: 1
         schema_version: 1
-    '5':
+    '4':
       slot: 38
       item:
         ==: org.bukkit.inventory.ItemStack
         DataVersion: 4671
         id: minecraft:diamond_leggings
         count: 1
+        schema_version: 1
+    '5':
+      slot: 41
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:golden_apple
+        count: 5
         schema_version: 1
 scoreboard:
   enabled: true
