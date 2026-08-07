@@ -1,6 +1,6 @@
 {
   "name": "eaglercraft-1.21.5",
-  "forwardPorts": [25565],
+  "forwardPorts": [25565, 25567],
   "portsAttributes": {
     "25565": {
       "label": "Minecraft Server",
@@ -8,7 +8,7 @@
     },
     "25567": {
       "label": "Velocity Proxy",
-      "onAutoForward": "ignore"
+      "onAutoForward": "notify"
     }
   }
 }

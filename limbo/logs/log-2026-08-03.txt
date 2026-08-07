@@ -1,0 +1,34 @@
+04:23:35.534 INFO  Limbo -- Starting server...
+04:23:38.452 INFO  Limbo -- Server started on localhost/127.0.0.1:25566
+04:25:28.162 INFO  Limbo -- Player ItzRealSilver connected (/127.0.0.1:33248) [V1_21_11]
+04:25:32.865 INFO  Limbo -- Player ItzRealSilver disconnected
+04:25:34.424 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:33264) [V1_21_11]
+04:25:42.364 INFO  Limbo -- Player ItzSammer disconnected
+04:25:45.709 INFO  Limbo -- Player silverstone2328 connected (/127.0.0.1:45790) [V1_21_11]
+04:25:50.730 INFO  Limbo -- Player silverstone2328 disconnected
+04:28:28.103 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:45776) [V1_21_11]
+04:28:58.075 ERROR Limbo -- Encountered exception
+io.netty.channel.unix.Errors$NativeIoException: recvAddress(..) failed with error(-104): Connection reset by peer
+04:28:58.081 INFO  Limbo -- Player ItzSammer disconnected
+04:29:22.323 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:42230) [V1_21_11]
+04:29:29.399 INFO  Limbo -- Player ItzSammer disconnected
+04:32:54.017 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:55412) [V1_21_11]
+04:33:12.956 INFO  Limbo -- Player silverstone2328 connected (/127.0.0.1:58750) [V1_21_11]
+04:33:24.015 ERROR Limbo -- Encountered exception
+io.netty.channel.unix.Errors$NativeIoException: recvAddress(..) failed with error(-104): Connection reset by peer
+04:33:24.015 INFO  Limbo -- Player ItzSammer disconnected
+04:33:42.972 ERROR Limbo -- Encountered exception
+io.netty.handler.timeout.ReadTimeoutException: null
+04:33:42.973 INFO  Limbo -- Player silverstone2328 disconnected
+04:37:28.558 INFO  Limbo -- Player silverstone2328 connected (/127.0.0.1:54360) [V1_21_11]
+04:37:43.468 INFO  Limbo -- Player silverstone2328 disconnected
+04:38:02.214 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:48132) [V1_21_11]
+04:38:19.102 INFO  Limbo -- Player ItzSammer disconnected
+04:41:45.190 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:54876) [V1_21_11]
+04:41:55.418 INFO  Limbo -- Player ItzSammer disconnected
+04:42:00.423 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:41304) [V1_21_11]
+04:42:06.297 INFO  Limbo -- Player ItzSammer disconnected
+04:43:38.561 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:45710) [V1_21_11]
+04:43:50.046 INFO  Limbo -- Player ItzSammer disconnected
+05:11:07.425 INFO  Limbo -- Player silverstone2328 connected (/127.0.0.1:44262) [V1_21_11]
+05:11:17.248 INFO  Limbo -- Player silverstone2328 disconnected
