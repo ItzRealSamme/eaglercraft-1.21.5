@@ -169,6 +169,7 @@ entities:
         hard: default
         soft: default
     despawn-time:
+      ender_pearl: disabled
       llama_spit: disabled
       snowball: disabled
     disable-mob-spawner-spawn-egg-transformation: false

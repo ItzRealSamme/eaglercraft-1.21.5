@@ -1,0 +1,40 @@
+[2026/08/26 07:11:28]: §9          __             _       
+[2026/08/26 07:11:28]: §9  _ __   / /  ___   __ _(_)_ __  
+[2026/08/26 07:11:28]: §9 | '_ \ / /  / _ \ / _` | | '_ \ 
+[2026/08/26 07:11:28]: §9 | | | / /__| (_) | (_| | | | | |
+[2026/08/26 07:11:28]: §9 |_| |_\____/\___/ \__, |_|_| |_|
+[2026/08/26 07:11:28]: §9                  |___/            
+[2026/08/26 07:11:28]: §9 By: www.nickuc.com - V 10.4.27
+[2026/08/26 07:11:28]: §9 
+[2026/08/26 07:11:29]: §3[nLogin] [DEBUG] All settings were loaded in 524 ms.
+[2026/08/26 07:11:29]: §3[nLogin] [DEBUG] Loading the messages_en.yml message file...
+[2026/08/26 07:11:29]: §3[nLogin] [DEBUG] All plugin messages were loaded in 166 ms (languageByClient=false).
+[2026/08/26 07:11:29]: §3[nLogin] [DEBUG] All proxy settings were loaded in 24 ms.
+[2026/08/26 07:11:29]: §3[nLogin] [DEBUG] Loading database...
+[2026/08/26 07:11:30]: §3[nLogin] [DEBUG] Starting logger filter...
+[2026/08/26 07:11:35]: 
+[2026/08/26 07:11:35]:  §bThank you so much for choosing nLogin! §4<3
+[2026/08/26 07:11:35]: 
+[2026/08/26 07:11:35]:  §4For your safety, please read the message below:
+[2026/08/26 07:11:35]:   §cNever download nLogin from unknown sources.
+[2026/08/26 07:11:35]:   §cA modified version may contain malicious software.
+[2026/08/26 07:11:35]: 
+[2026/08/26 07:11:35]:  §3Trusted sources:
+[2026/08/26 07:11:35]:   §bwww.nickuc.com
+[2026/08/26 07:11:35]:   §bwww.github.com/nickuc
+[2026/08/26 07:11:35]:   §bOpeNLogin installer (from Spigot or GitHub)
+[2026/08/26 07:11:35]: 
+[2026/08/26 07:11:35]:  §3Official support channels:
+[2026/08/26 07:11:35]:   §bDiscord group: §fwww.nickuc.com/discord
+[2026/08/26 07:11:35]:   §bDocumentation: §fdocs.nickuc.com/nlogin/
+[2026/08/26 07:11:35]:   §bEmail: §fsupport@nickuc.com
+[2026/08/26 07:11:35]:   §bYouTube: §fyoutube.com/nickuc
+[2026/08/26 07:11:35]: 
+[2026/08/26 07:11:35]:  §eTo remove this warning, log in with "nlogin.admin" permission on the server
+[2026/08/26 07:11:35]:  §eand click the "Setup plugin" button to configure your plugin.
+[2026/08/26 07:11:35]: 
+[2026/08/26 07:11:49]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'DoctorrMomo', `unique_id` = 1761bae3efb93a39b93a4b2fed96d855,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$xS2ILb3eetTGPuw3bXCF1.BnZdCXddXp.TczC14hOnPpnMu2yoc52', `last_ip` = '0:0:0:0:0:0:0:1', `creation_date` = 2026-05-22 10:14:53.931, `last_seen` = 2026-08-26 07:11:49.084, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"survival","key":"last-server"},{"value":"en","key":"language"}],"version":0}' WHERE `ai` = 4" (applied to [last_ip, last_seen, settings] columns)
+[2026/08/26 07:11:49]: [nLogin] The user DoctorrMomo has successfully logged in.
+[2026/08/26 07:13:35]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'DoctorrMomo', `unique_id` = 1761bae3efb93a39b93a4b2fed96d855,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$xS2ILb3eetTGPuw3bXCF1.BnZdCXddXp.TczC14hOnPpnMu2yoc52', `last_ip` = '0:0:0:0:0:0:0:1', `creation_date` = 2026-05-22 10:14:53.931, `last_seen` = 2026-08-26 07:13:35.743, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"survival","key":"last-server"},{"value":"en","key":"language"}],"version":0}' WHERE `ai` = 4" (applied to [last_seen, settings] columns)
+[2026/08/26 07:13:49]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'DoctorrMomo', `unique_id` = 1761bae3efb93a39b93a4b2fed96d855,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$xS2ILb3eetTGPuw3bXCF1.BnZdCXddXp.TczC14hOnPpnMu2yoc52', `last_ip` = '0:0:0:0:0:0:0:1', `creation_date` = 2026-05-22 10:14:53.931, `last_seen` = 2026-08-26 07:13:49.279, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"survival","key":"last-server"},{"value":"en","key":"language"}],"version":0}' WHERE `ai` = 4" (applied to [last_ip, last_seen, settings] columns)
+[2026/08/26 07:13:49]: [nLogin] The user DoctorrMomo has successfully logged in.

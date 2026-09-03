@@ -1,0 +1,42 @@
+[2026/09/02 10:34:35]: §9          __             _       
+[2026/09/02 10:34:35]: §9  _ __   / /  ___   __ _(_)_ __  
+[2026/09/02 10:34:35]: §9 | '_ \ / /  / _ \ / _` | | '_ \ 
+[2026/09/02 10:34:35]: §9 | | | / /__| (_) | (_| | | | | |
+[2026/09/02 10:34:35]: §9 |_| |_\____/\___/ \__, |_|_| |_|
+[2026/09/02 10:34:35]: §9                  |___/            
+[2026/09/02 10:34:35]: §9 By: www.nickuc.com - V 10.4.27
+[2026/09/02 10:34:35]: §9 
+[2026/09/02 10:34:36]: §3[nLogin] [DEBUG] All settings were loaded in 394 ms.
+[2026/09/02 10:34:36]: §3[nLogin] [DEBUG] Loading the messages_en.yml message file...
+[2026/09/02 10:34:36]: §3[nLogin] [DEBUG] All plugin messages were loaded in 148 ms (languageByClient=false).
+[2026/09/02 10:34:36]: §3[nLogin] [DEBUG] All proxy settings were loaded in 18 ms.
+[2026/09/02 10:34:36]: §3[nLogin] [DEBUG] Loading database...
+[2026/09/02 10:34:37]: §3[nLogin] [DEBUG] Starting logger filter...
+[2026/09/02 10:34:43]: 
+[2026/09/02 10:34:43]:  §bThank you so much for choosing nLogin! §4<3
+[2026/09/02 10:34:43]: 
+[2026/09/02 10:34:43]:  §4For your safety, please read the message below:
+[2026/09/02 10:34:43]:   §cNever download nLogin from unknown sources.
+[2026/09/02 10:34:43]:   §cA modified version may contain malicious software.
+[2026/09/02 10:34:43]: 
+[2026/09/02 10:34:43]:  §3Trusted sources:
+[2026/09/02 10:34:43]:   §bwww.nickuc.com
+[2026/09/02 10:34:43]:   §bwww.github.com/nickuc
+[2026/09/02 10:34:43]:   §bOpeNLogin installer (from Spigot or GitHub)
+[2026/09/02 10:34:43]: 
+[2026/09/02 10:34:43]:  §3Official support channels:
+[2026/09/02 10:34:43]:   §bDiscord group: §fwww.nickuc.com/discord
+[2026/09/02 10:34:43]:   §bDocumentation: §fdocs.nickuc.com/nlogin/
+[2026/09/02 10:34:43]:   §bEmail: §fsupport@nickuc.com
+[2026/09/02 10:34:43]:   §bYouTube: §fyoutube.com/nickuc
+[2026/09/02 10:34:43]: 
+[2026/09/02 10:34:43]:  §eTo remove this warning, log in with "nlogin.admin" permission on the server
+[2026/09/02 10:34:43]:  §eand click the "Setup plugin" button to configure your plugin.
+[2026/09/02 10:34:43]: 
+[2026/09/02 10:35:59]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'ItzSammer', `unique_id` = a130978d5803371dab29c8f6ed7849bb,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$XIwyRFUSP4TifbVnoP92l.aNeR1tn2MZ3CEB3y25gvrjwIuPfVLIS', `last_ip` = '0:0:0:0:0:0:0:1', `creation_date` = 2026-05-22 08:12:06.495, `last_seen` = 2026-09-02 10:35:59.112, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"en","key":"language"},{"value":"survival","key":"last-server"}],"version":0}' WHERE `ai` = 3" (applied to [last_ip, last_seen, settings] columns)
+[2026/09/02 10:35:59]: [nLogin] The user ItzSammer has successfully logged in.
+[2026/09/02 10:36:11]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'ItzSammer', `unique_id` = a130978d5803371dab29c8f6ed7849bb,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$gRiZJFsELZSPhnnAk/qxa.RLRqx2Ooa.IDpyufjSlOKCR5f0RDH.2', `last_ip` = '0:0:0:0:0:0:0:1', `creation_date` = 2026-05-22 08:12:06.495, `last_seen` = 2026-09-02 10:36:11.461, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":true,"key":"force-invalid-session"},{"value":"en","key":"language"},{"value":"survival","key":"last-server"}],"version":0}' WHERE `ai` = 3" (applied to all columns)
+[2026/09/02 10:36:11]: §3[nLogin] [DEBUG] The ItzSammer player changed its account password ~ 0:0:0:0:0:0:0:1
+[2026/09/02 10:36:23]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'ItzSammer', `unique_id` = a130978d5803371dab29c8f6ed7849bb,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$nG.JcQY95J//aeNnImI3He/cX9qsiKgJVCm4.Ex3Wsfh/R/k/GZES', `last_ip` = '0:0:0:0:0:0:0:1', `creation_date` = 2026-05-22 08:12:06.495, `last_seen` = 2026-09-02 10:36:23.154, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":true,"key":"force-invalid-session"},{"value":"en","key":"language"},{"value":"survival","key":"last-server"}],"version":0}' WHERE `ai` = 3" (applied to all columns)
+[2026/09/02 10:36:23]: §3[nLogin] [DEBUG] The ItzSammer player changed its account password ~ 0:0:0:0:0:0:0:1
+[2026/09/02 10:40:39]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'ItzSammer', `unique_id` = a130978d5803371dab29c8f6ed7849bb,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$nG.JcQY95J//aeNnImI3He/cX9qsiKgJVCm4.Ex3Wsfh/R/k/GZES', `last_ip` = '0:0:0:0:0:0:0:1', `creation_date` = 2026-05-22 08:12:06.495, `last_seen` = 2026-09-02 10:40:39.494, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":true,"key":"force-invalid-session"},{"value":"en","key":"language"},{"value":"survival","key":"last-server"}],"version":0}' WHERE `ai` = 3" (applied to [last_seen, settings] columns)

@@ -1,0 +1,134 @@
+03:31:54.044 INFO  Limbo -- Starting server...
+03:31:56.640 INFO  Limbo -- Server started on localhost/127.0.0.1:25567
+03:33:04.165 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:52680) [V1_21_11]
+03:33:08.761 INFO  Limbo -- Player DoctorrMomo disconnected
+03:33:18.057 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:54460) [V1_21_11]
+03:33:26.270 INFO  Limbo -- Player DoctorrMomo disconnected
+03:35:14.389 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:50160) [V1_21_11]
+03:35:19.083 INFO  Limbo -- Player DoctorrMomo disconnected
+03:40:02.125 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:34200) [V1_21_11]
+03:40:07.181 INFO  Limbo -- Player ItzSammer disconnected
+03:40:32.652 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:59590) [V1_21_11]
+03:40:38.639 INFO  Limbo -- Player DoctorrMomo disconnected
+03:56:07.512 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:44420) [V1_21_11]
+03:56:12.690 INFO  Limbo -- Player ItzSammer disconnected
+04:01:39.595 INFO  Limbo -- Player silverstone2328 connected (/127.0.0.1:39792) [V1_21_11]
+04:01:44.283 INFO  Limbo -- Player silverstone2328 disconnected
+04:32:25.348 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:47278) [V1_21_11]
+04:32:25.383 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:47284) [V1_21_11]
+04:33:08.857 INFO  Limbo -- Player DoctorrMomo disconnected
+04:33:11.284 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:34474) [V1_21_11]
+04:33:53.714 INFO  Limbo -- Player DoctorrMomo disconnected
+04:33:55.448 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:43854) [V1_21_11]
+04:34:04.730 INFO  Limbo -- Player ItzSammer disconnected
+04:34:04.735 INFO  Limbo -- Player DoctorrMomo disconnected
+04:37:19.957 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:52636) [V1_21_11]
+04:37:20.049 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:52650) [V1_21_11]
+04:37:47.001 INFO  Limbo -- Player DoctorrMomo disconnected
+04:37:50.874 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:52738) [V1_21_11]
+04:38:08.005 INFO  Limbo -- Player DoctorrMomo disconnected
+04:38:10.397 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:45350) [V1_21_11]
+04:39:01.775 INFO  Limbo -- Player ItzSammer disconnected
+04:39:01.783 INFO  Limbo -- Player DoctorrMomo disconnected
+04:43:57.825 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:60082) [V1_21_11]
+04:44:03.454 INFO  Limbo -- Player DoctorrMomo disconnected
+04:57:13.581 INFO  Limbo -- Player silverstone2328 connected (/127.0.0.1:37172) [V1_21_11]
+04:57:18.615 INFO  Limbo -- Player silverstone2328 disconnected
+05:07:38.500 INFO  Limbo -- Player silverstone2328 connected (/127.0.0.1:46238) [V1_21_11]
+05:08:08.445 ERROR Limbo -- Encountered exception
+io.netty.channel.unix.Errors$NativeIoException: recvAddress(..) failed with error(-104): Connection reset by peer
+05:08:08.449 INFO  Limbo -- Player silverstone2328 disconnected
+05:16:57.434 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:49290) [V1_21_11]
+05:17:12.150 ERROR Limbo -- Encountered exception
+io.netty.channel.unix.Errors$NativeIoException: recvAddress(..) failed with error(-104): Connection reset by peer
+05:17:12.151 INFO  Limbo -- Player ItzSammer disconnected
+05:17:24.271 INFO  Limbo -- Player silverstone2328 connected (/127.0.0.1:38062) [V1_21_11]
+05:17:31.151 INFO  Limbo -- Player silverstone2328 disconnected
+05:19:59.170 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:33534) [V1_21_11]
+05:20:03.954 INFO  Limbo -- Player ItzSammer disconnected
+05:25:07.300 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:48510) [V1_21_11]
+05:25:11.856 INFO  Limbo -- Player ItzSammer disconnected
+05:57:02.926 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:54386) [V1_21_11]
+05:57:09.602 INFO  Limbo -- Player ItzSammer disconnected
+05:57:15.668 INFO  Limbo -- Player nivinpro9 connected (/127.0.0.1:57742) [V1_21_11]
+05:57:21.155 INFO  Limbo -- Player nivinpro9 disconnected
+05:57:22.894 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:48506) [V1_21_11]
+05:57:29.303 INFO  Limbo -- Player DoctorrMomo disconnected
+06:13:25.545 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:40750) [V1_21_11]
+06:13:55.569 ERROR Limbo -- Encountered exception
+io.netty.handler.timeout.ReadTimeoutException: null
+06:13:55.569 INFO  Limbo -- Player ItzSammer disconnected
+06:18:15.883 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:50626) [V1_21_11]
+06:18:21.187 INFO  Limbo -- Player ItzSammer disconnected
+06:19:27.507 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:40020) [V1_21_11]
+06:19:34.294 INFO  Limbo -- Player ItzSammer disconnected
+06:56:48.492 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:51582) [V1_21_11]
+06:56:53.938 INFO  Limbo -- Player ItzSammer disconnected
+07:15:39.308 INFO  Limbo -- Player nivinpro9 connected (/127.0.0.1:47168) [V1_21_11]
+07:15:43.634 INFO  Limbo -- Player nivinpro9 disconnected
+07:18:00.422 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:37546) [V1_21_11]
+07:18:44.971 INFO  Limbo -- Player ItzSammer disconnected
+07:18:51.283 INFO  Limbo -- Player nivinpro9 connected (/127.0.0.1:40768) [V1_21_11]
+07:18:54.758 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:40780) [V1_21_11]
+07:19:00.186 INFO  Limbo -- Player ItzSammer disconnected
+07:19:07.577 INFO  Limbo -- Player nivinpro9 disconnected
+07:19:11.875 INFO  Limbo -- Player nivinpro9 connected (/127.0.0.1:42756) [V1_21_11]
+07:19:30.139 INFO  Limbo -- Player nivinpro9 disconnected
+07:32:09.467 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:50018) [V1_21_11]
+07:32:39.517 ERROR Limbo -- Encountered exception
+io.netty.handler.timeout.ReadTimeoutException: null
+07:32:39.521 INFO  Limbo -- Player ItzSammer disconnected
+07:33:59.327 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:53600) [V1_21_11]
+07:34:04.086 INFO  Limbo -- Player ItzSammer disconnected
+07:39:57.084 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:56716) [V1_21_11]
+07:40:02.387 INFO  Limbo -- Player ItzSammer disconnected
+07:44:57.097 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:45772) [V1_21_11]
+07:45:03.138 INFO  Limbo -- Player DoctorrMomo disconnected
+07:51:40.603 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:60820) [V1_12_2]
+07:51:44.915 INFO  Limbo -- Player ItzSammer disconnected
+07:51:46.744 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:51494) [V1_12_2]
+07:51:50.521 INFO  Limbo -- Player ItzSammer disconnected
+07:51:52.034 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:51496) [V1_12_2]
+07:52:02.268 INFO  Limbo -- Player ItzSammer disconnected
+07:53:29.182 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:52322) [V1_21_11]
+07:53:37.634 INFO  Limbo -- Player ItzSammer disconnected
+07:58:02.051 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:44870) [V1_21_11]
+07:58:07.989 INFO  Limbo -- Player DoctorrMomo disconnected
+08:05:47.385 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:39490) [V1_21_11]
+08:05:55.286 INFO  Limbo -- Player ItzSammer disconnected
+08:09:26.212 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:37284) [V1_21_11]
+08:09:31.784 INFO  Limbo -- Player DoctorrMomo disconnected
+08:12:00.336 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:55778) [V1_21_11]
+08:12:05.984 INFO  Limbo -- Player DoctorrMomo disconnected
+08:15:19.388 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:43016) [V1_21_11]
+08:15:26.084 INFO  Limbo -- Player ItzSammer disconnected
+08:31:46.562 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:58360) [V1_21_11]
+08:31:51.836 INFO  Limbo -- Player DoctorrMomo disconnected
+08:37:35.405 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:52844) [V1_21_11]
+08:38:05.430 ERROR Limbo -- Encountered exception
+io.netty.channel.unix.Errors$NativeIoException: recvAddress(..) failed with error(-104): Connection reset by peer
+08:38:05.432 INFO  Limbo -- Player ItzSammer disconnected
+08:39:11.299 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:54242) [V1_21_11]
+08:40:08.262 ERROR Limbo -- Encountered exception
+io.netty.handler.timeout.ReadTimeoutException: null
+08:40:08.264 INFO  Limbo -- Player DoctorrMomo disconnected
+08:40:12.614 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:51754) [V1_21_11]
+08:40:18.833 INFO  Limbo -- Player ItzSammer disconnected
+08:41:49.156 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:57842) [V1_21_11]
+08:41:55.393 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:57856) [V1_21_11]
+08:42:19.156 ERROR Limbo -- Encountered exception
+io.netty.handler.timeout.ReadTimeoutException: null
+08:42:19.157 INFO  Limbo -- Player ItzSammer disconnected
+08:42:25.413 ERROR Limbo -- Encountered exception
+io.netty.handler.timeout.ReadTimeoutException: null
+08:42:25.414 INFO  Limbo -- Player DoctorrMomo disconnected
+08:53:12.300 INFO  Limbo -- Player silverstone2328 connected (/127.0.0.1:41626) [V1_21_11]
+08:53:17.785 INFO  Limbo -- Player silverstone2328 disconnected
+08:59:21.775 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:46228) [V1_21_11]
+08:59:26.487 INFO  Limbo -- Player DoctorrMomo disconnected
+09:02:14.342 INFO  Limbo -- Player DoctorrMomo connected (/127.0.0.1:59018) [V1_21_11]
+09:02:20.585 INFO  Limbo -- Player DoctorrMomo disconnected
+09:10:01.838 INFO  Limbo -- Player silverstone2328 connected (/127.0.0.1:48944) [V1_12_2]
+09:10:07.064 INFO  Limbo -- Player silverstone2328 disconnected
+09:10:57.667 INFO  Limbo -- Player ItzSammer connected (/127.0.0.1:38744) [V1_21_11]
+09:11:07.084 INFO  Limbo -- Player ItzSammer disconnected

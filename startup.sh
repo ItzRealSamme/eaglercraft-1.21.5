@@ -28,8 +28,8 @@ start_if_free() {
 	sleep 1
 }
 
-start_if_free "Limbo" "limbo" 25566
-start_if_free "Velocity" "velocity" 25567
-start_if_free "Server" "server" 25565
+start_if_free "Limbo" "limbo" 25567
+start_if_free "Velocity" "velocity" 25569
+start_if_free "Server" "server" 25571
 
 echo "All start attempts complete. Check logs for details."

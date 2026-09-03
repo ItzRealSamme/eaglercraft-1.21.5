@@ -25,9 +25,9 @@ check_service() {
     fi
 }
 
-check_service "Limbo" "limbo" 25566
-check_service "Velocity" "velocity" 25567
-check_service "Server" "server" 25565
+check_service "Limbo" "limbo" 25567
+check_service "Velocity" "velocity" 25569
+check_service "Server" "server" 25571
 
 echo
-ss -ltnp 2>/dev/null | grep -E ':(25565|25566|25567)\b' || true
+ss -ltnp 2>/dev/null | grep -E ':(25566|25567|25569|25571)\b' || true
